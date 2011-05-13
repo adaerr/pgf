@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
---- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/spring/Attic/pgfgd-algorithm-textor-spring.lua,v 1.1 2011/05/06 15:12:16 jannis-pohlmann Exp $
+--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/force/Attic/pgfgd-algorithm-textor-spring.lua,v 1.1 2011/05/13 01:23:49 jannis-pohlmann Exp $
 
 pgf.module("pgf.graphdrawing")
 
