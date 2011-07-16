@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/core/lualayer/Attic/pgflibrarygraphdrawing-algorithms.lua,v 1.5 2011/07/06 21:50:29 jannis-pohlmann Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/core/lualayer/Attic/pgflibrarygraphdrawing-algorithms.lua,v 1.6 2011/07/16 17:49:44 jannis-pohlmann Exp $
 
 --- This file contains a number of standard graph algorithms such as Dijkstra.
 
@@ -189,12 +189,10 @@ function algorithms.classify_edges(graph)
     return table.remove(stack)
   end
 
-  if not initial_nodes then
-    initial_nodes = graph.nodes
-    --initial_nodes = table.filter_values(graph.nodes, function (node)
-    --  return node:getInDegree() == 0
-    --end)
-  end
+  local initial_nodes = graph.nodes
+  --local initial_nodes = table.filter_values(graph.nodes, function (node)
+  --  return node:getInDegree() == 0
+  --end)
 
   for node in table.reverse_value_iter(initial_nodes) do
     push(node)
