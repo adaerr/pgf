@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/force/Attic/pgfgd-algorithm-Hu2006-spring.lua,v 1.9 2011/09/30 13:16:53 jannis-pohlmann Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/force/Attic/pgfgd-algorithm-Hu2006-spring.lua,v 1.10 2011/10/02 21:36:06 jannis-pohlmann Exp $
 
 pgf.module("pgf.graphdrawing")
 
@@ -46,8 +46,6 @@ function graph_drawing_algorithm_Hu2006_spring(graph)
 
   hu:initialize()
   hu:run()
-
-  orientation.adjust(graph)
 end
 
 

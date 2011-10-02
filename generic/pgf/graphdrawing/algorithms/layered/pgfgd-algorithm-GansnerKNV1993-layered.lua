@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/layered/Attic/pgfgd-algorithm-GansnerKNV1993-layered.lua,v 1.2 2011/09/30 13:16:53 jannis-pohlmann Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/layered/Attic/pgfgd-algorithm-GansnerKNV1993-layered.lua,v 1.3 2011/10/02 21:36:07 jannis-pohlmann Exp $
 
 pgf.module("pgf.graphdrawing")
 
@@ -34,8 +34,6 @@ function graph_drawing_algorithm_GansnerKNV1993_layered(graph)
 
   algorithm:initialize()
   algorithm:run()
-
-  orientation.adjust(graph)
 end
 
 
