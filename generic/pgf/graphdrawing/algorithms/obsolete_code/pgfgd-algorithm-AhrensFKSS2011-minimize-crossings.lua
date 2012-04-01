@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/misc/Attic/pgfgd-algorithm-AhrensFKSS2011-minimize-crossings.lua,v 1.2 2011/09/30 13:16:53 jannis-pohlmann Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/obsolete_code/Attic/pgfgd-algorithm-AhrensFKSS2011-minimize-crossings.lua,v 1.1 2012/04/01 21:31:36 tantau Exp $
 
 -- This contains an algorithm for drawing a graph using local search.
 

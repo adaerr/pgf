@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/trees/Attic/pgfgd-algorithm-wetherell-tree.lua,v 1.4 2012/03/29 19:38:38 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/obsolete_code/Attic/pgfgd-algorithm-wetherell-tree.lua,v 1.1 2012/04/01 21:31:37 tantau Exp $
 
 pgf.module("pgf.graphdrawing")
 

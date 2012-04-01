@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/trees/Attic/pgfgd-algorithm-AhrensFKSS2011-tree.lua,v 1.6 2012/03/29 19:38:38 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/obsolete_code/Attic/pgfgd-algorithm-AhrensFKSS2011-tree.lua,v 1.1 2012/04/01 21:31:37 tantau Exp $
 
 -- This file contains an algorithm for drawing arbitrary shaped trees.
 
