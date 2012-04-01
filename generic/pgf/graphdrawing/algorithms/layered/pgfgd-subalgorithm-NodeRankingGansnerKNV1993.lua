@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/layered/Attic/pgfgd-algorithm-modular-layered-node-ranking-GansnerKNV1993.lua,v 1.2 2011/07/26 11:29:05 jannis-pohlmann Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/layered/Attic/pgfgd-subalgorithm-NodeRankingGansnerKNV1993.lua,v 1.1 2012/04/01 21:54:46 tantau Exp $
 
 pgf.module("pgf.graphdrawing")
 

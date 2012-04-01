@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/layered/Attic/pgfgd-algorithm-modular-layered-edge-routing-GansnerKNV1993.lua,v 1.1 2011/07/15 15:53:28 jannis-pohlmann Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/layered/Attic/pgfgd-subalgorithm-EdgeRoutingGansnerKNV1993.lua,v 1.1 2012/04/01 21:54:46 tantau Exp $
 
 pgf.module("pgf.graphdrawing")
 
