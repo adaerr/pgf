@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
---- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/core/lualayer/postprocessing/Attic/pgflibrarygraphdrawing-orientation.lua,v 1.1 2012/04/03 21:41:45 tantau Exp $
+--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/core/lualayer/postprocessing/Attic/pgflibrarygraphdrawing-orientation.lua,v 1.2 2012/04/05 10:04:16 tantau Exp $
 
 pgf.module("pgf.graphdrawing")
 
@@ -190,9 +190,9 @@ function orientation.perform_post_layout_steps(algorithm)
    end
 
    for _, node in ipairs(algorithm.graph.nodes) do
-      local grow = node:getOption('/graph drawing/grow')
+      local grow = node:getOption('/graph drawing/grow', algorithm.graph)
       if growth_fun(node, grow, false) then return end
-      local grow = node:getOption("/graph drawing/grow'")
+      local grow = node:getOption("/graph drawing/grow'", algorithm.graph)
       if growth_fun(node, grow, true) then return end
    end
 
