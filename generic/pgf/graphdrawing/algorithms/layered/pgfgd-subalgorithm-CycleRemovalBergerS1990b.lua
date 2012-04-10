@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/layered/Attic/pgfgd-subalgorithm-CycleRemovalBergerS1990b.lua,v 1.1 2012/04/01 21:54:46 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/layered/Attic/pgfgd-subalgorithm-CycleRemovalBergerS1990b.lua,v 1.2 2012/04/10 23:12:20 tantau Exp $
 
 pgf.module("pgf.graphdrawing")
 
@@ -18,8 +18,9 @@ CycleRemovalBergerS1990b.__index = CycleRemovalBergerS1990b
 
 
 
-function CycleRemovalBergerS1990b:new(graph)
+function CycleRemovalBergerS1990b:new(main_algorithm, graph)
   local algorithm = {
+    main_algorithm = main_algorithm,
     graph = graph,
   }
   setmetatable(algorithm, CycleRemovalBergerS1990b)
