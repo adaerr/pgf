@@ -8,7 +8,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/core/lualayer/model/Attic/pgfgd-core-node.lua,v 1.2 2012/04/15 17:21:25 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/core/lualayer/model/Attic/pgfgd-core-node.lua,v 1.3 2012/04/16 17:58:36 tantau Exp $
 
 -- This file defines a node class, used in the graph representation.
 
@@ -92,7 +92,7 @@ end
 -- @return The value of the node option \meta{name} or |nil|.
 --
 function Node:getOption(name, graph)
-   return self.options[name] or (graph and graph.options[name]) or Interface.defaultGraphParameters[name]
+   return self.options[name] or (graph and graph.options[name]) or pgf.gd.control.TeXInterface.parameter_defaults[name]
 end
 
 

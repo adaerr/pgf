@@ -8,7 +8,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/core/lualayer/model/Attic/pgfgd-core-edge.lua,v 1.2 2012/04/15 17:21:25 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/core/lualayer/model/Attic/pgfgd-core-edge.lua,v 1.3 2012/04/16 17:58:36 tantau Exp $
 
 -- This file defines an edge class, used in the graph representation.
 
@@ -90,7 +90,7 @@ end
 -- @return The value of the edge option \meta{name} or |nil|.
 --
 function Edge:getOption(name, graph)
-   return self.options[name] or (graph and graph.options[name]) or Interface.defaultGraphParameters[name]
+   return self.options[name] or (graph and graph.options[name]) or pgf.gd.control.TeXInterface.parameter_defaults[name]
 end
 
 

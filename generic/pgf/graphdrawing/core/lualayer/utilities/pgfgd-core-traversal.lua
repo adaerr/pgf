@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/core/lualayer/utilities/Attic/pgfgd-core-traversal.lua,v 1.1 2012/04/12 15:16:08 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/core/lualayer/utilities/Attic/pgfgd-core-traversal.lua,v 1.2 2012/04/16 17:58:36 tantau Exp $
 
 --- This file implements a number of graph traversal functions including
 --- depth-first and breadth-first search, traversal using a topological sorting
@@ -118,7 +118,6 @@ function traversal.depth_first_dag(graph, initial_nodes)
   return function ()
     while #stack > 0 do
       local node = table.remove(stack)
-      Sys:log('VISIT: ' .. tostring(node))
 
       local out_edges = node:getOutgoingEdges()
       for edge in iter.filter(table.value_iter(out_edges), edgeNotExplored) do

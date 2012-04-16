@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/core/lualayer/utilities/Attic/pgfgd-core-ranking.lua,v 1.1 2012/04/12 15:16:08 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/core/lualayer/utilities/Attic/pgfgd-core-ranking.lua,v 1.2 2012/04/16 17:58:36 tantau Exp $
 
 --- This file contains a helper class for managing node rankings as used
 --- in layered drawing algorithms.
@@ -174,15 +174,12 @@ end
 
 
 function Ranking:normalizeRanks()
-  --Sys:log('normalize ranks:')
 
   -- get the current ranks
   local ranks = self:getRanks()
 
   local min_rank = ranks[1]
   local max_rank = ranks[#ranks]
-
-  --Sys:log('  min_rank = ' .. min_rank .. ', max_rank = ' .. max_rank)
 
   -- clear ranks
   self.rank_to_nodes = {}
@@ -191,8 +188,6 @@ function Ranking:normalizeRanks()
   for node in table.key_iter(self.position_in_rank) do
     local rank, pos = self:getNodeInfo(node)
     local new_rank = rank - (min_rank - 1)
-
-    --Sys:log('    rerank ' .. node.name .. ' from ' .. rank .. ' to ' .. new_rank)
     
     self.rank_to_nodes[new_rank] = self.rank_to_nodes[new_rank] or {}
     self.rank_to_nodes[new_rank][pos] = node

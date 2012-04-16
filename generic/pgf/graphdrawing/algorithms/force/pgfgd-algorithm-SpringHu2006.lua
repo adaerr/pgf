@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/force/Attic/pgfgd-algorithm-SpringHu2006.lua,v 1.3 2012/04/12 14:41:32 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/force/Attic/pgfgd-algorithm-SpringHu2006.lua,v 1.4 2012/04/16 17:58:34 tantau Exp $
 
 
 --- Implementation of a spring spring graph drawing algorithm.
@@ -176,8 +176,6 @@ function SpringHu2006:computeInitialLayout(graph, spring_length)
       local direction = Vector:new{x = math.random(1, spring_length), y = math.random(1, spring_length)}
       local distance = 1.8 * spring_length * self.graph_density * math.sqrt(self.graph_size) / 2
       local displacement = direction:normalized():timesScalar(distance)
-
-      Sys:log('SpringHu2006: distance = ' .. distance)
 
       graph.nodes[loose_index].pos = graph.nodes[fixed_index].pos:plus(displacement)
     else
