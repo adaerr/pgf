@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
---- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/Attic/pgf.lua,v 1.1 2012/04/16 17:58:36 tantau Exp $
+--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/Attic/pgf.lua,v 1.2 2012/04/17 22:40:50 tantau Exp $
 
 
 -- Declare the pgf namespace:
@@ -34,7 +34,7 @@ local function searcher_function(modulename)
   end
 
   if filename and filename ~= "" then
-    return function () dofile(filename) end
+    return function () return dofile(filename) end
   else
     return nil
   end

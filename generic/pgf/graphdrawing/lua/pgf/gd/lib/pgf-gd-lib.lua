@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
---- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/lib/Attic/pgf-gd-lib.lua,v 1.1 2012/04/16 22:40:29 tantau Exp $
+--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/lib/Attic/pgf-gd-lib.lua,v 1.2 2012/04/17 22:40:54 tantau Exp $
 
 
 
@@ -19,18 +19,6 @@ require "pgf.gd"
 
 -- Declare namespace
 pgf.gd.lib = {}
-
-
--- Preload namespace
-package.loaded ["pgf.gd.lib"] = pgf.gd.lib
-
-require "pgf.gd.lib.Anchoring"
-require "pgf.gd.lib.Components"
-require "pgf.gd.lib.Events"
-require "pgf.gd.lib.Orientation"
-require "pgf.gd.lib.Simplifiers"
-require "pgf.gd.lib.Vector"
-
 
 
 -- Done

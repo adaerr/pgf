@@ -8,9 +8,10 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/force/Attic/pgfgd-algorithm-SpringElectricalWalshaw2000.lua,v 1.5 2012/04/16 22:40:29 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/force/Attic/pgfgd-algorithm-SpringElectricalWalshaw2000.lua,v 1.6 2012/04/17 22:40:45 tantau Exp $
 
 local lib = require "pgf.gd.lib"
+local QuadTree = require "pgf.gd.force.QuadTree"
 
 
 --- Implementation of a spring-electrical graph drawing algorithm.
@@ -463,12 +464,12 @@ function SpringElectricalWalshaw2000:buildQuadtree(graph)
 
   -- create the quadtree
   quadtree = QuadTree:new(min_pos.x, min_pos.y,
-                          max_pos.x - min_pos.x,
-                          max_pos.y - min_pos.y)
+			  max_pos.x - min_pos.x,
+			  max_pos.y - min_pos.y)
 
   -- insert nodes into the quadtree
   for node in table.value_iter(graph.nodes) do
-    local particle = Particle:new(node.pos, node.weight)
+    local particle = QuadTree.Particle:new(node.pos, node.weight)
     particle.node = node
     quadtree:insert(particle)
   end

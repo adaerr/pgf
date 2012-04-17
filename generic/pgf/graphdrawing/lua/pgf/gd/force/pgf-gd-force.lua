@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
---- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Attic/pgf-gd-model.lua,v 1.2 2012/04/17 22:40:56 tantau Exp $
+--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/force/Attic/pgf-gd-force.lua,v 1.1 2012/04/17 22:40:51 tantau Exp $
 
 
 
@@ -18,9 +18,9 @@ require "pgf.gd"
 
 
 -- Declare namespace
-pgf.gd.model = {}
+pgf.gd.force = {}
 
 
 -- Done
 
-return pgf.gd.model
+return pgf.gd.force

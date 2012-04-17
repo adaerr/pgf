@@ -1,3 +1,4 @@
+-- Copyright 2011 by Jannis Pohlmann
 -- Copyright 2012 by Till Tantau
 --
 -- This file may be distributed an/or modified
@@ -7,21 +8,61 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Attic/pgf-gd-model-Cluster.lua,v 1.1 2012/04/16 22:40:29 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Attic/pgf-gd-model-Cluster.lua,v 1.2 2012/04/17 22:40:55 tantau Exp $
 
+
+
+--- The Cluser class defines a model of a cluster inside a graph.
+--
+--
+
+local Cluster = {}
+Cluster.__index = Cluster
+
+
+-- Namespace
 
 local model   = require "pgf.gd.model"
+model.Cluster = Cluster
 
 
---- The Edge class defines a model of a graph edge.
+
+--- TODO Jannis: Add documentation for this class.
 --
---
+function Cluster:new(name)
+  local cluster = {
+    name = name,
+    nodes = {},
+    contains_node = {},
+  }
+  setmetatable(cluster, Cluster)
+  return cluster
+end
 
-model.Cluster = {}
+
+
+function Cluster:getName()
+  return self.name
+end
+
+
+
+function Cluster:addNode(node)
+  if not self:findNode(node) then
+    self.contains_node[node] = true
+    self.nodes[#self.nodes + 1] = node
+  end
+end
+
+
+
+function Cluster:findNode(node)
+  return self.contains_node[node]
+end
 
 
 
 
 -- Done
 
-return model.Cluster
+return Cluster
