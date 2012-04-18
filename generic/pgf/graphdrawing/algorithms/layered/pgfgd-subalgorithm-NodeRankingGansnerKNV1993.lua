@@ -7,10 +7,11 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/layered/Attic/pgfgd-subalgorithm-NodeRankingGansnerKNV1993.lua,v 1.3 2012/04/16 17:58:35 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/algorithms/layered/Attic/pgfgd-subalgorithm-NodeRankingGansnerKNV1993.lua,v 1.4 2012/04/18 15:28:18 tantau Exp $
 
 pgf.module("pgf.graphdrawing")
 
+local NetworkSimplex = require "pgf.gd.layered.NetworkSimplex"
 
 
 NodeRankingGansnerKNV1993 = {}

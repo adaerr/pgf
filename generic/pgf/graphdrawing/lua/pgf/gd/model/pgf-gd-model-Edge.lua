@@ -7,21 +7,27 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Attic/pgf-gd-model-Edge.lua,v 1.1 2012/04/16 22:40:29 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Attic/pgf-gd-model-Edge.lua,v 1.2 2012/04/18 15:28:18 tantau Exp $
 
+
+
+
+
+--- The Edge class ...
+--
+--
+
+local Edge = pgf.graphdrawing.Edge
+Edge.__index = Edge
+
+
+-- Namespace
 
 local model   = require "pgf.gd.model"
-
-
---- The Edge class defines a model of a graph edge.
---
---
-
-model.Edge = {}
-
+model.Edge = Edge
 
 
 
 -- Done
 
-return model.Edge
+return Edge
