@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/Attic/pgf.gd.trees.ReingoldTilford1981.lua,v 1.4 2012/05/12 12:42:05 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/Attic/pgf.gd.trees.ReingoldTilford1981.lua,v 1.5 2012/05/14 10:27:48 tantau Exp $
 
 
 
@@ -19,11 +19,9 @@
 -- Electronic Publishing, 2(2), 101-115, 1989
 
 local ReingoldTilford1981 = pgf.gd.new_algorithm_class {
-  properties = {
-    works_only_on_connected_graphs = true,
-    needs_a_spanning_tree = true,
-    growth_direction = 90,
-  }
+  works_only_on_connected_graphs = true,
+  needs_a_spanning_tree = true,
+  growth_direction = 90,
 }
 
 

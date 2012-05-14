@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/circular/Attic/pgf.gd.circular.Tantau2012.lua,v 1.4 2012/05/09 22:56:59 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/circular/Attic/pgf.gd.circular.Tantau2012.lua,v 1.5 2012/05/14 10:27:47 tantau Exp $
 
 
 --- A circular layout
@@ -23,9 +23,7 @@
 -- edges actually play no role.
 
 local Tantau2012 = pgf.gd.new_algorithm_class {
-  properties = {
-    growth_direction = 180
-  }
+  growth_direction = 180
 }
 
 -- Make public

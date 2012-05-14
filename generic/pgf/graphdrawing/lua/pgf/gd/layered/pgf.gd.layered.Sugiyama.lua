@@ -7,20 +7,16 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/layered/Attic/pgf.gd.layered.Sugiyama.lua,v 1.3 2012/05/09 22:57:00 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/layered/Attic/pgf.gd.layered.Sugiyama.lua,v 1.4 2012/05/14 10:27:48 tantau Exp $
 
 
 --- An implementation of a modular version of the Sugiyama method
 
 local Sugiyama = pgf.gd.new_algorithm_class {
-  properties = {
-    works_only_on_connected_graphs = true,
-    works_only_for_loop_free_graphs = true,
-    growth_direction = 90,
-    old_graph_model = true,
-  },
-  graph_parameters = {
-  }
+  works_only_on_connected_graphs = true,
+  works_only_for_loop_free_graphs = true,
+  growth_direction = 90,
+  old_graph_model = true,
 }
 
 -- Namespace
