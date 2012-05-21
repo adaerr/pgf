@@ -7,11 +7,11 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Attic/pgf.gd.model.Arc.lua,v 1.5 2012/05/14 17:50:31 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Attic/pgf.gd.model.Arc.lua,v 1.6 2012/05/21 22:00:07 tantau Exp $
 
 
---- The Arc class
--- .
+---
+-- The Arc class
 --
 -- An arc is an extremely light-weight object. It just has two fields,
 -- by default: head and tail.

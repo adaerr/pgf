@@ -8,15 +8,13 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/examples/Attic/pgf.gd.examples.SimpleDemo.lua,v 1.5 2012/05/14 10:27:47 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/examples/Attic/pgf.gd.examples.SimpleDemo.lua,v 1.6 2012/05/21 22:00:06 tantau Exp $
 
 
 --- A trivial node placing algorithm for demonstration purposes.
 -- All nodes are positioned on a circle, independently of which edges are present...
 
-local SimpleDemo = pgf.gd.new_algorithm_class {
-  works_only_on_connected_graphs = true,
-}
+local SimpleDemo = pgf.gd.new_algorithm_class {}
 
 function SimpleDemo:run()
   local g = self.digraph
