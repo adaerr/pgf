@@ -8,7 +8,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/lib/Attic/pgf.gd.lib.Iterators.lua,v 1.1 2012/04/19 15:22:29 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/deprecated/Attic/pgf.gd.lib.Iterators.lua,v 1.1 2012/05/23 21:02:18 tantau Exp $
 
 
 
