@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/Attic/pgf.gd.control.LayoutPipeline.lua,v 1.5 2012/05/12 12:42:04 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/Attic/pgf.gd.control.LayoutPipeline.lua,v 1.6 2012/05/24 11:51:31 tantau Exp $
 
 
 --- The LayoutPipeline class is a singleton object.
@@ -291,6 +291,7 @@ function LayoutPipeline.generateEdge(algorithm, tail, head, init)
   edge.generated_options = edge.generated_options or {}
   edge.storage = Storage.new()
 
+  arc.storage.syntactic_edges = arc.storage.syntactic_edges or {}
   arc.storage.syntactic_edges[#arc.storage.syntactic_edges+1] = edge
 
   scope.events[#scope.events + 1] = { kind = 'edge', parameters = { arc, #arc.storage.syntactic_edges } }
