@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/lib/Attic/pgf.gd.lib.Components.lua,v 1.3 2012/05/09 22:57:00 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/lib/Attic/pgf.gd.lib.Components.lua,v 1.4 2012/05/31 20:10:12 tantau Exp $
 
 
 
@@ -224,7 +224,7 @@ function Components:pack(syntactic_digraph, components)
     end
 
     for _,a in ipairs(c.arcs) do
-      for _,p in ipairs(a.point_cloud) do
+      for _,p in ipairs(a:pointCloud()) do
 	vertices [#vertices + 1] = Vertex.new { pos = p, kind = "dummy" }
       end
     end

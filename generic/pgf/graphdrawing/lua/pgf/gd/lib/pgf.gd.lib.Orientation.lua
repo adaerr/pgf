@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/lib/Attic/pgf.gd.lib.Orientation.lua,v 1.5 2012/05/24 11:51:33 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/lib/Attic/pgf.gd.lib.Orientation.lua,v 1.6 2012/05/31 20:10:12 tantau Exp $
 
 
 
@@ -26,11 +26,6 @@ local lib       = require("pgf.gd.lib")
 local Transform = require("pgf.gd.lib.Transform")
 local Arc       = require("pgf.gd.model.Arc")
 
-
--- Setup some options
-
-Arc.optionSyntacticCollector("/graph drawing/orient")
-Arc.optionSyntacticCollector("/graph drawing/orient'")
 
 
 --- Determine rotation caused by growth
@@ -88,8 +83,8 @@ function Orientation.prepareRotateAround(algorithm, ugraph)
     local other = lib.find_min(
       ugraph:outgoing(v),
       function (a)
-	if a.head ~= v and a.event_index then
-	  return a, a.event_index
+	if a.head ~= v and a:eventIndex() then
+	  return a, a:eventIndex()
 	end
       end)
     info.to_node = (other and other.head) or
@@ -201,7 +196,7 @@ function Orientation.rotateGraphAround(ugraph, around_x, around_y, from, to, swa
   end
   
   for _,a in ipairs(ugraph.arcs) do
-    for _,p in ipairs(a.point_cloud) do
+    for _,p in ipairs(a:pointCloud()) do
       p:apply(t)
     end
   end
@@ -250,11 +245,11 @@ function Orientation.orient(algorithm, ugraph)
   
   -- Step 1: Search for an edge with the orient option:
   for _, a in ipairs(ugraph.arcs) do
-    if a["/graph drawing/orient"] then
-      return Orientation.orientTwoNodes(ugraph, a.tail, a.head, a["/graph drawing/orient"]/360*2*math.pi, false)
+    if a:options("/graph drawing/orient",true) then
+      return Orientation.orientTwoNodes(ugraph, a.tail, a.head, a:options("/graph drawing/orient")/360*2*math.pi, false)
     end
-    if a["/graph drawing/orient'"] then
-      return Orientation.orientTwoNodes(ugraph, a.tail, a.head, a["/graph drawing/orient'"]/360*2*math.pi, true)
+    if a:options("/graph drawing/orient'",true) then
+      return Orientation.orientTwoNodes(ugraph, a.tail, a.head, a:options("/graph drawing/orient'")/360*2*math.pi, true)
     end
   end
   
