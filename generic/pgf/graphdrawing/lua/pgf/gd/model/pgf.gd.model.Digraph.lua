@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Attic/pgf.gd.model.Digraph.lua,v 1.8 2012/05/31 20:10:12 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Attic/pgf.gd.model.Digraph.lua,v 1.9 2012/06/22 12:58:49 tantau Exp $
 
 
 
@@ -53,7 +53,7 @@
 --   while subsequent accesses take time $O(1)$ -- till the  
 --   next use of |disconnect|. This means that once you start deleting
 --   arcs using |disconnect|, you should perform as many additional
---   |disconnect|s before accessing |arcs| one more.
+--   |disconnect|s as possible before accessing |arcs| one more.
 -- \end{itemize}
 --  
 -- \medskip
@@ -121,7 +121,7 @@
 --\end{codeexample}
 --
 -- However, it will often be more convenient and, in case the there
--- are far less arcs than node, also faster to write
+-- are far less arcs than vertices, also faster to write
 -- 
 --\begin{codeexample}[code only]
 --for _,a in ipairs(g.arcs) do
