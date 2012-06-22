@@ -8,7 +8,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/deprecated/Attic/pgf.gd.lib.Iterators.lua,v 1.1 2012/05/23 21:02:18 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/deprecated/Attic/pgf.gd.lib.Iterators.lua,v 1.2 2012/06/22 08:12:10 tantau Exp $
 
 
 
@@ -19,8 +19,7 @@
 local Iterators = {}
 
 -- Namespace
-local lib     = require "pgf.gd.lib"
-lib.Iterators = Iterators
+require("pgf.gd.lib").Iterators = Iterators
 
 
 
@@ -39,7 +38,7 @@ lib.Iterators = Iterators
 --
 -- @return An iterator for traversing \meta{graph} in a topological order.
 --
-function Iterators:topologicallySorted(dag)
+function Iterators.topologicallySorted(dag)
   -- track visited edges 
   local deleted_edges = {}
 

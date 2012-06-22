@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/lib/Attic/pgf.gd.lib.Components.lua,v 1.4 2012/05/31 20:10:12 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/lib/Attic/pgf.gd.lib.Components.lua,v 1.5 2012/06/22 08:12:13 tantau Exp $
 
 
 
@@ -19,8 +19,7 @@ local Components = {}
 
 
 -- Namespace
-local lib     = require "pgf.gd.lib"
-lib.Components = Components
+require("pgf.gd.lib").Components = Components
 
 -- Imports
 
