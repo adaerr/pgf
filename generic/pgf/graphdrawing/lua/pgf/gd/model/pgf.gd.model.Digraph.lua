@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Attic/pgf.gd.model.Digraph.lua,v 1.9 2012/06/22 12:58:49 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Attic/pgf.gd.model.Digraph.lua,v 1.10 2012/07/04 14:14:57 tantau Exp $
 
 
 
@@ -569,7 +569,7 @@ function Digraph:disconnect(v, t)
     end
   else
     -- Case 1: Remove all arcs incident to v:
-    local v_storage = v_storage
+    local v_storage = v.storage
     local self_incomings = self.incomings
     local self_outgoings = self.outgoings
     
@@ -667,7 +667,7 @@ function Digraph:reconnect(arc, tail, head)
     end
 
     -- Remove old arc:
-    self:diconnect(arc.tail, arc.head)
+    self:disconnect(arc.tail, arc.head)
 
     return new_arc
   end
