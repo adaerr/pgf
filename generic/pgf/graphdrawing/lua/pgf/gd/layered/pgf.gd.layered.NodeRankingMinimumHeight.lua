@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/layered/Attic/pgf.gd.layered.NodeRankingMinimumHeight.lua,v 1.3 2012/06/22 08:12:11 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/layered/Attic/pgf.gd.layered.NodeRankingMinimumHeight.lua,v 1.4 2012/07/16 22:09:35 tantau Exp $
 
 
 
@@ -47,9 +47,10 @@ function NodeRankingMinimumHeight:run()
     if #edges == 0 then
       ranking:setRank(node, 1)
     else
-      local max_rank = table.combine_values(edges, function (max_rank, edge)
-        return math.max(max_rank, ranking:getRank(edge:getNeighbour(node)))
-      end, -math.huge)
+      local max_rank = -math.huge
+      for _,edge in ipairs(edge) do
+	max_rank = math.max(max_rank, ranking:getRank(edge:getNeighbour(node)))
+      end
 
       assert(max_rank >= 1)
 

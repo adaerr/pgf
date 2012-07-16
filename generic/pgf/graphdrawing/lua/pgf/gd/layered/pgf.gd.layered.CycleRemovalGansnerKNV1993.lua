@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/layered/Attic/pgf.gd.layered.CycleRemovalGansnerKNV1993.lua,v 1.2 2012/05/06 21:45:45 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/layered/Attic/pgf.gd.layered.CycleRemovalGansnerKNV1993.lua,v 1.3 2012/07/16 22:09:35 tantau Exp $
 
 
 
@@ -60,7 +60,7 @@ function CycleRemovalGansnerKNV1993:run()
   local tree_or_forward_edges, cross_edges, back_edges = Simplifiers:classifyEdges(self.graph)
 
   -- reverse the back edges in order to make the graph acyclic
-  for edge in table.value_iter(back_edges) do
+  for _,edge in ipairs(back_edges) do
     edge.reversed = true
   end
 end
