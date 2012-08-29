@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
---- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/lib/Attic/pgf.gd.lib.Direct.lua,v 1.1 2012/05/06 21:45:46 tantau Exp $
+--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/lib/Attic/pgf.gd.lib.Direct.lua,v 1.2 2012/08/29 11:07:00 tantau Exp $
 
 
 
@@ -42,7 +42,7 @@ local Digraph = require "pgf.gd.model.Digraph"
 
 function Direct.digraphFromSyntacticDigraph(syntactic_digraph)
   local digraph = Digraph.new(syntactic_digraph) -- copy
-
+  
   -- Now go over all arcs of the syntactic_digraph and turn them into
   -- arcs with the correct direction in the digraph:
   for _,a in ipairs(syntactic_digraph.arcs) do

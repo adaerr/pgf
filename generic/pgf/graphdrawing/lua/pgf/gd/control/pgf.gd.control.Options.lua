@@ -9,7 +9,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/Attic/pgf.gd.control.Options.lua,v 1.3 2012/06/22 12:58:49 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/Attic/pgf.gd.control.Options.lua,v 1.4 2012/08/29 11:07:00 tantau Exp $
 
 
 
@@ -135,9 +135,12 @@ end
 function Options.lookup(name, ...)
   local list = {...}
   for i=1,#list-1 do
-    local v = rawget(list[i].options, name)
-    if v then
-      return v
+    local o = list[i].options
+    if o then 
+      local v = rawget(o, name)
+      if v then
+	return v
+      end
     end
   end
   return list[#list].options[name]

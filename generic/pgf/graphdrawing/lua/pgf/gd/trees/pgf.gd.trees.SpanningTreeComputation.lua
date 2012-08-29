@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/Attic/pgf.gd.trees.SpanningTreeComputation.lua,v 1.5 2012/05/31 20:10:12 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/Attic/pgf.gd.trees.SpanningTreeComputation.lua,v 1.6 2012/08/29 11:07:01 tantau Exp $
 
 
 
@@ -137,7 +137,7 @@ function SpanningTreeComputation.computeSpanningTree (ugraph, dfs, events)
     -- Compute children as they come in the event list:
     local children = {}
     
-    local i = v.event_index+1
+    local i = (v.event_index or 0)+1
     while i <= #events and events[i].kind == "edge" do
       i = i + 1
     end
