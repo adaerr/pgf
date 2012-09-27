@@ -9,7 +9,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/Attic/pgf.gd.control.Options.lua,v 1.4 2012/08/29 11:07:00 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/Attic/pgf.gd.control.Options.lua,v 1.5 2012/09/27 11:45:21 tantau Exp $
 
 
 
@@ -80,7 +80,7 @@ end
 
 function Options.add(t,new_options)
   local accumulates = Options.accumulates
-  for _,p in ipairs(new_options) do
+  for _,p in ipairs(new_options or {}) do
     local k = p.key
     local v = p.value
     if v == nil then
