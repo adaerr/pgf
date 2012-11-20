@@ -7,14 +7,16 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
---- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/circular/Attic/pgf.gd.circular.lua,v 1.1 2012/04/19 15:09:15 tantau Exp $
+--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/circular/Attic/pgf.gd.circular.lua,v 1.2 2012/11/20 23:30:59 tantau Exp $
 
 
+
+local circular = {}
 
 -- Declare namespace
-require("pgf.gd").circular = {}
+require("pgf.gd").circular = circular
 
 
 -- Done
 
-return pgf.gd.circular
+return circular

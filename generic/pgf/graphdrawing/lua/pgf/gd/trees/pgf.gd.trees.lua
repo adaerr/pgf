@@ -7,20 +7,15 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
---- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/Attic/pgf.gd.trees.lua,v 1.1 2012/04/19 15:22:29 tantau Exp $
+--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/Attic/pgf.gd.trees.lua,v 1.2 2012/11/20 23:32:05 tantau Exp $
 
 
-
--- Imports
-
-require "pgf"
-require "pgf.gd"
-
+local trees = {}
 
 -- Declare namespace
-pgf.gd.trees = {}
+require("pgf.gd").trees = tree
 
 
 -- Done
 
-return pgf.gd.trees
+return trees

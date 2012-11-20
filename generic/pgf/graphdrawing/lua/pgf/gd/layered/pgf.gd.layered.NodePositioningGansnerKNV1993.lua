@@ -7,44 +7,23 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/layered/Attic/pgf.gd.layered.NodePositioningGansnerKNV1993.lua,v 1.4 2012/07/16 22:09:35 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/layered/Attic/pgf.gd.layered.NodePositioningGansnerKNV1993.lua,v 1.5 2012/11/20 23:32:02 tantau Exp $
 
 
 
---- An sub of Modular for positioning nodes
-
-NodePositioningGansnerKNV1993 = {}
-NodePositioningGansnerKNV1993.__index = NodePositioningGansnerKNV1993
-
-
--- Namespace
-require("pgf.gd.layered").NodePositioningGansnerKNV1993 = NodePositioningGansnerKNV1993
+local NodePositioningGansnerKNV1993 = {}
 
 
 -- Imports
 
 local layered = require "pgf.gd.layered"
 
-local Graph = require "pgf.gd.model.Graph"
-local Edge  = require "pgf.gd.model.Edge"
-local Node  = require "pgf.gd.model.Node"
+local Graph = require "pgf.gd.deprecated.Graph"
+local Edge  = require "pgf.gd.deprecated.Edge"
+local Node  = require "pgf.gd.deprecated.Node"
 
 local NetworkSimplex = require "pgf.gd.layered.NetworkSimplex"
 
-
-
-
-
-
-function NodePositioningGansnerKNV1993.new(main_algorithm, graph, ranking)
-  local algorithm = {
-    main_algorithm = main_algorithm,
-    graph = graph,
-    ranking = ranking,
-  }
-  setmetatable(algorithm, NodePositioningGansnerKNV1993)
-  return algorithm
-end
 
 
 function NodePositioningGansnerKNV1993:run()

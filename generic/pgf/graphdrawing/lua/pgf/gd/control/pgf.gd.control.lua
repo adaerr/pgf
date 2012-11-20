@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
---- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/Attic/pgf.gd.control.lua,v 1.1 2012/04/19 15:22:28 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/Attic/pgf.gd.control.lua,v 1.2 2012/11/20 23:31:45 tantau Exp $
 
 
 

@@ -8,7 +8,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/deprecated/Attic/pgf.gd.lib.Iterators.lua,v 1.3 2012/07/16 22:09:33 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/deprecated/Attic/pgf.gd.deprecated.Iterators.lua,v 1.1 2012/11/20 23:31:50 tantau Exp $
 
 
 
@@ -19,7 +19,6 @@
 local Iterators = {}
 
 -- Namespace
-require("pgf.gd.lib").Iterators = Iterators
 
 local lib = require("pgf.gd.lib")
 

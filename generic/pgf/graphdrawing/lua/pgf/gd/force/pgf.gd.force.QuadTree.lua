@@ -8,7 +8,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/force/Attic/pgf.gd.force.QuadTree.lua,v 1.3 2012/07/16 22:09:34 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/force/Attic/pgf.gd.force.QuadTree.lua,v 1.4 2012/11/20 23:32:00 tantau Exp $
 
 
 --- An implementation of a quad trees.
@@ -27,7 +27,7 @@ QuadTree.__index = QuadTree
 require("pgf.gd.force").QuadTree = QuadTree
 
 -- Imports:
-local Vector = require "pgf.gd.lib.Vector"
+local Vector = require "pgf.gd.deprecated.Vector"
 local lib = require "pgf.gd.lib"
 
 

@@ -8,7 +8,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/deprecated/Attic/pgf.gd.model.Cluster.lua,v 1.1 2012/05/23 21:02:18 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/deprecated/Attic/pgf.gd.deprecated.Cluster.lua,v 1.1 2012/11/20 23:31:50 tantau Exp $
 
 
 
@@ -21,9 +21,6 @@ Cluster.__index = Cluster
 
 
 -- Namespace
-
-local model   = require "pgf.gd.model"
-model.Cluster = Cluster
 
 
 

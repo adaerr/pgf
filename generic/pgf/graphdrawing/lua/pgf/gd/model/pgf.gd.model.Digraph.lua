@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Attic/pgf.gd.model.Digraph.lua,v 1.11 2012/08/29 11:07:01 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Attic/pgf.gd.model.Digraph.lua,v 1.12 2012/11/20 23:32:04 tantau Exp $
 
 
 
@@ -174,7 +174,7 @@
 --    reference to the graph itself.
 -- @field storage is the storage. See the section on |Storage|
 -- objects. 
--- @field options If present, it will be an |Options| object, storing
+-- @field options If present, it will be a table storing
 -- the options set for the syntactic digraph.
 --
 local Digraph = {}
@@ -277,12 +277,6 @@ function Digraph.new(initial)
   digraph.incomings = {} 
   digraph.outgoings = {} 
 
-  -- The syntactic digraph. This needs reworking.
-  digraph.syntactic_digraph = assert(initial.syntactic_digraph, "no syntactic digraph specified")
-  if digraph.syntactic_digraph == "self" then
-    digraph.syntactic_digraph = digraph
-  end
-  
   if vertices then 
     digraph:add(vertices)
   end
@@ -510,7 +504,8 @@ function Digraph:connect(s, t)
       tail = s,
       head = t,
       storage = Storage.new(),
-      syntactic_digraph = self.syntactic_digraph
+      syntactic_digraph = self.syntactic_digraph,
+      syntactic_edges = {}
     }
     setmetatable(arc, Arc)
 

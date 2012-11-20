@@ -8,7 +8,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/layered/Attic/pgf.gd.layered.Ranking.lua,v 1.3 2012/07/16 22:09:35 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/layered/Attic/pgf.gd.layered.Ranking.lua,v 1.4 2012/11/20 23:32:02 tantau Exp $
 
 
 
@@ -96,7 +96,7 @@ end
 
 
 function Ranking:getNodes(rank)
-  return self.rank_to_nodes[rank]
+  return self.rank_to_nodes[rank] or {}
 end
 
 

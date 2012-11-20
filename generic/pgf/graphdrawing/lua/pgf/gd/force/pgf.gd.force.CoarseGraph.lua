@@ -8,14 +8,14 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/force/Attic/pgf.gd.force.CoarseGraph.lua,v 1.3 2012/07/16 22:09:34 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/force/Attic/pgf.gd.force.CoarseGraph.lua,v 1.4 2012/11/20 23:32:00 tantau Exp $
 
 
 --- A class for handling "coarse" versions of a graph. Such versions contain
 -- less nodes and edges than the original graph while retaining the overall 
 -- structure.
 
-local Graph = require "pgf.gd.model.Graph"   -- we subclass from here
+local Graph = require "pgf.gd.deprecated.Graph"   -- we subclass from here
 local CoarseGraph = Graph.new()
 CoarseGraph.__index = CoarseGraph
 
@@ -27,8 +27,8 @@ force.CoarseGraph = CoarseGraph
 
 
 -- Imports
-local Node = require "pgf.gd.model.Node"
-local Edge = require "pgf.gd.model.Edge"
+local Node = require "pgf.gd.deprecated.Node"
+local Edge = require "pgf.gd.deprecated.Edge"
 
 local lib = require "pgf.gd.lib"
 

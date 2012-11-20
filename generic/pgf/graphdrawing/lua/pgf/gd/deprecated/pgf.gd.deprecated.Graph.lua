@@ -9,7 +9,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/deprecated/Attic/pgf.gd.model.Graph.lua,v 1.2 2012/07/16 22:09:33 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/deprecated/Attic/pgf.gd.deprecated.Graph.lua,v 1.1 2012/11/20 23:31:50 tantau Exp $
 
 
 
@@ -24,11 +24,8 @@ Graph.__index = Graph
 
 -- Namespace
 
-local model   = require "pgf.gd.model"
-model.Graph = Graph
-
 -- Imports
-local Edge = require "pgf.gd.model.Edge"
+local Edge = require "pgf.gd.deprecated.Edge"
 
 local lib = require "pgf.gd.lib"
 
@@ -104,7 +101,7 @@ end
 -- @return The value of the graph option \meta{name} or |nil|.
 --
 function Graph:getOption(name)
-  return self.options[name] or pgf.gd.control.TeXInterface.parameter_defaults[name]
+  return self.options[name]
 end
 
 

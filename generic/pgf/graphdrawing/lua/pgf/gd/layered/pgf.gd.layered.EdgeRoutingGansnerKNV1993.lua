@@ -7,29 +7,11 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/layered/Attic/pgf.gd.layered.EdgeRoutingGansnerKNV1993.lua,v 1.2 2012/05/06 21:45:45 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/layered/Attic/pgf.gd.layered.EdgeRoutingGansnerKNV1993.lua,v 1.3 2012/11/20 23:32:02 tantau Exp $
 
 
 
---- An sub of Modular for routing edges
-
-EdgeRoutingGansnerKNV1993 = {}
-EdgeRoutingGansnerKNV1993.__index = EdgeRoutingGansnerKNV1993
-
-
--- Namespace
-require("pgf.gd.layered").EdgeRoutingGansnerKNV1993 = EdgeRoutingGansnerKNV1993
-
-
-function EdgeRoutingGansnerKNV1993.new(main_algorithm, graph)
-  local algorithm = {
-    main_algorithm = main_algorithm,
-    graph = graph,
-  }
-  setmetatable(algorithm, EdgeRoutingGansnerKNV1993)
-  return algorithm
-end
-
+local EdgeRoutingGansnerKNV1993 = {}
 
 
 function EdgeRoutingGansnerKNV1993:run()
