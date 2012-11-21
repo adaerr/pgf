@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/force/Attic/pgf.gd.force.SpringElectricalHu2006.lua,v 1.8 2012/11/20 23:32:00 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/force/Attic/pgf.gd.force.SpringElectricalHu2006.lua,v 1.9 2012/11/21 21:29:40 tantau Exp $
 
 
 local SpringElectricalHu2006 = {}
@@ -32,10 +32,11 @@ declare {
 
   old_graph_model = true,
 
-  documentation = [["  
+  summary = [["  
        Implementation of a spring electrical graph drawing algorithm based on
-       the paper   
-      
+       a paper by Hu.
+ "]],
+  documentation = [["  
        \begin{itemize}
        \item
          Y. Hu.

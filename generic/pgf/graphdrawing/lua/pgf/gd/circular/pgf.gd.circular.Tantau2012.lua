@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/circular/Attic/pgf.gd.circular.Tantau2012.lua,v 1.7 2012/11/20 23:30:59 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/circular/Attic/pgf.gd.circular.Tantau2012.lua,v 1.8 2012/11/21 21:29:39 tantau Exp $
 
 
 -- Imports
@@ -31,8 +31,7 @@ declare {
       "]],
   
   documentation = [["
-     The name
-     |simple necklace layout| is reminiscent of the more general
+     The name |simple necklace layout| is reminiscent of the more general
      ``necklace layout,'' a term coined by Speckmann and Verbeek in
      their paper
      \begin{itemize}

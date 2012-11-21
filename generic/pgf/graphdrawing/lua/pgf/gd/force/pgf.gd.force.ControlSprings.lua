@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
---- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/force/Attic/pgf.gd.force.ControlSprings.lua,v 1.1 2012/11/20 23:32:00 tantau Exp $
+--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/force/Attic/pgf.gd.force.ControlSprings.lua,v 1.2 2012/11/21 21:29:40 tantau Exp $
 
 
 -- Imports
@@ -47,7 +47,7 @@ declare {
   type = "number",
   initial = "0.01",
 
-  documentation = [["  
+  summary = [["  
        The ``spring constant'' is a factor from Hooke's law describing the
        ``stiffness'' of a spring. This factor is used inside spring-based
        algorithms to determine how strongly edges ``pull'' and ``push'' at

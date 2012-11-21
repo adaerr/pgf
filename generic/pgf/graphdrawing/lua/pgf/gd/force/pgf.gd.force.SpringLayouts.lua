@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
---- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/force/Attic/pgf.gd.force.SpringLayouts.lua,v 1.1 2012/11/20 23:32:00 tantau Exp $
+--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/force/Attic/pgf.gd.force.SpringLayouts.lua,v 1.2 2012/11/21 21:29:40 tantau Exp $
 
 
 -- Imports
@@ -28,7 +28,7 @@ declare {
   key = "spring layout",
   { key = "spring Hu 2006 layout" },
 
-  documentation = [["  
+  summary = [["  
        This key selects Hu's 2006 spring layout with appropriate settings
        for some parameters.
    "]]
