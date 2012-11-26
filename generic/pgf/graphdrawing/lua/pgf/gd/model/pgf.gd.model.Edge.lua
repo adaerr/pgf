@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Attic/pgf.gd.model.Edge.lua,v 1.4 2012/11/20 23:32:04 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Attic/pgf.gd.model.Edge.lua,v 1.5 2012/11/26 21:44:31 tantau Exp $
 
 
 --- 
@@ -19,7 +19,7 @@
 -- are present in the syntactic digraph.
 --
 -- In detail, the relationship between arcs and edges is as follows:
--- In there is an |Edge| between two vertices $u$ and $v$ in the
+-- If there is an |Edge| between two vertices $u$ and $v$ in the
 -- syntactic digraph, there will be an |Arc| from $u$ to $v$ and the
 -- array |syntactic_edges| of this |Arc| object will contain the
 -- |Edge| object. In particular, if there are several edges between

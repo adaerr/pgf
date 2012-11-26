@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Attic/pgf.gd.model.Arc.lua,v 1.10 2012/11/20 23:32:04 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Attic/pgf.gd.model.Arc.lua,v 1.11 2012/11/26 21:44:31 tantau Exp $
 
 
 ---
@@ -43,6 +43,9 @@
 -- @field storage A storage.
 -- @field path If nonempty, the path of the arc. See the description
 -- above.
+-- @field syntactic_edges This field is an array containing syntactic
+-- edges (``real'' edges in the syntactic digraph) that underly this
+-- arc. 
 --
 local Arc = {}
 Arc.__index = Arc
