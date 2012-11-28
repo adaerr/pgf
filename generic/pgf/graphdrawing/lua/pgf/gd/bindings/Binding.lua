@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/bindings/Binding.lua,v 1.1 2012/11/27 17:24:24 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/bindings/Binding.lua,v 1.2 2012/11/28 21:04:58 tantau Exp $
 
 
 
@@ -207,7 +207,7 @@ end
 -- @param vertex The |Vertex| object.
 
 function Binding:renderVertex(vertex)
-  error("method must be implemented in binding " .. tostring(self))
+  -- Does nothing by default
 end
 
 
@@ -257,7 +257,7 @@ end
 -- @param edge The |Edge| object.
 
 function Binding:renderEdge(edge)
-  error("method must be implemented in binding " .. tostring(self))
+  -- Does nothing by default
 end
 
 

@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/ReingoldTilford1981.lua,v 1.1 2012/11/27 17:24:26 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/ReingoldTilford1981.lua,v 1.2 2012/11/28 21:04:58 tantau Exp $
 
 
 
@@ -19,7 +19,6 @@ local ReingoldTilford1981 = {}
 -- Imports
 local layered = require "pgf.gd.layered"
 local declare = require("pgf.gd.interface.InterfaceToAlgorithms").declare
-
 
 
 ---
@@ -198,7 +197,6 @@ declare {
 
 
 
-
 ---
 declare {
   key    = "missing nodes get space",
@@ -295,6 +293,7 @@ declare {
     "]]
   }
 }
+
 
 
     
