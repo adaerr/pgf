@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/circular/Tantau2012.lua,v 1.1 2012/11/27 17:24:24 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/circular/Tantau2012.lua,v 1.2 2012/11/30 12:00:52 tantau Exp $
 
 
 -- Imports
@@ -38,8 +38,7 @@ declare {
      \item
        Bettina Speckmann and Kevin Verbeek,
        \newblock Necklace Maps,
-       \newblock \emph{?,}
-       ?, 2010.
+     \newblock \emph{IEEE Transactions on Visualization and Computer Graphics,} 16(6):881--889, 2010.
      \end{itemize}
     
      For a |simple necklace layout|, the centers of the nodes
