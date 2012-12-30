@@ -7,8 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/SpanningTreeComputation.lua,v 1.2 2012/12/17 23:53:12 tantau Exp $
-
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/SpanningTreeComputation.lua,v 1.3 2012/12/30 00:20:50 tantau Exp $
 
 
 
@@ -52,6 +51,7 @@
 --
 
 local SpanningTreeComputation = {}
+
 
 
 -- Namespace

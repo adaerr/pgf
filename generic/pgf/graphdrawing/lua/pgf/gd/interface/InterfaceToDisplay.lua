@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua,v 1.3 2012/11/30 12:43:02 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua,v 1.4 2012/12/30 00:20:48 tantau Exp $
 
 
 
@@ -89,7 +89,6 @@ local option_cache = nil -- The option cache
 
 function InterfaceToDisplay.bind(class)
   assert (not InterfaceCore.binding, "binding already initialized")
-  assert (getmetatable(class.__index) == Binding, "must bind to a direct subclass of Binding")
   
   -- Create a new object
   InterfaceCore.binding = setmetatable({}, class)

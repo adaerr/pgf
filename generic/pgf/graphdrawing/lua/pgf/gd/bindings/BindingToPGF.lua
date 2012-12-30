@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/bindings/BindingToPGF.lua,v 1.3 2012/11/30 12:00:51 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/bindings/BindingToPGF.lua,v 1.4 2012/12/30 00:20:48 tantau Exp $
 
 
 ---
@@ -62,10 +62,6 @@ local lib = require "pgf.gd.lib"
 -- Forward
 local table_in_pgf_syntax
 
-function BindingToPGF:__tostring()
-  return "BindingToPGF"
-end
-
 
 -- Scope handling
 
@@ -86,9 +82,11 @@ function BindingToPGF:declareParameterCallback(t)
 	    .. t.type .. "}{" .. tostring(t.default or "") .. "}")
 end
 
+
 function BindingToPGF:declareParameterSequenceCallback(t)
   tex.print("\\pgfgdcallbackdeclareparametersequence{" .. t.key
-	    .. "}{" .. table_in_pgf_syntax(t) .. "}{" .. (t.default or "") .. "}")
+	    .. "}{" .. table_in_pgf_syntax(t)
+	    .. "}{" .. (t.default or "") .. "}")
 end
 
 function BindingToPGF:declareCollectionKind(t)
