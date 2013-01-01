@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/LayoutPipeline.lua,v 1.2 2012/11/30 12:43:02 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/LayoutPipeline.lua,v 1.3 2013/01/01 22:30:08 tantau Exp $
 
 
 ---
@@ -305,7 +305,12 @@ function LayoutPipeline.prepareRotateAround(algorithm, graph)
   
   -- Now compute the rotation
   local info = graph.storage[algorithm]
-  local growth_direction = v.growth_direction or algorithm.growth_direction or (algorithm.postconditions.upward_oriented and 90)
+  local growth_direction = v.growth_direction or algorithm.growth_direction
+    or (algorithm.postconditions.upward_oriented and 90) or (algorithm.postconditions.upward_oriented_swapped and 90)
+  
+  if algorithm.postconditions.upward_oriented_swapped then
+    swap = not swap
+  end
   
   if growth_direction == "fixed" then
     info.angle = 0 -- no rotation

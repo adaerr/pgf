@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/ogdf/layered/Attic/SugiyamaLayout.lua,v 1.3 2013/01/01 22:23:16 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/ogdf/layered/Attic/SugiyamaLayout.lua,v 1.4 2013/01/01 22:30:08 tantau Exp $
 
 
 ---
@@ -27,7 +27,7 @@ declare {
     connected = true
   },
   postconditions = {
-    upward_oriented = true
+    upward_oriented_swapped = true
   },
   includes = {
     "#include <ogdf/layered/SugiyamaLayout.h>"
