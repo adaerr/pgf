@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/ogdf/layered/Attic/SugiyamaLayout.lua,v 1.2 2013/01/01 17:10:09 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/ogdf/layered/Attic/SugiyamaLayout.lua,v 1.3 2013/01/01 22:23:16 tantau Exp $
 
 
 ---
@@ -41,11 +41,10 @@ declare {
       if (is_module_set<TwoLayerCrossMin>())
         SL.setCrossMin(new_module<TwoLayerCrossMin>());
 	
+      if (is_module_set<HierarchyLayoutModule>())
+        SL.setLayout(new_module<HierarchyLayoutModule>());
+	
       SL.call(graph_attributes);
-
-      // Flip:
-      node v;
-      forall_nodes (v, graph) graph_attributes.x(v) = -graph_attributes.x(v);
   ]],
   summary = "The OGDF implementation of the Sugiyama algorithm.",
   documentation = [["  
@@ -105,5 +104,5 @@ declare {
 require "pgf.gd.ogdf.layered.RankingModule"
 require "pgf.gd.ogdf.layered.TwoLayerCrossMin"
 require "pgf.gd.ogdf.layered.AcyclicSubgraphModule"
--- require "pgf.gd.ogdf.layered.HierarchyLayoutModule" -- missing...
+require "pgf.gd.ogdf.layered.HierarchyLayoutModule"
     
