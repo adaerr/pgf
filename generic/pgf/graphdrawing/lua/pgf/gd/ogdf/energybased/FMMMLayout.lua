@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/ogdf/energybased/Attic/FMMMLayout.lua,v 1.1 2012/12/30 00:20:49 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/ogdf/energybased/Attic/FMMMLayout.lua,v 1.2 2013/01/02 20:43:05 tantau Exp $
 
 
 ---
@@ -35,7 +35,7 @@ declare {
   ]],
   summary = "The OGDF implementation of the FMMM algorithm.",
   documentation = [["  
-      ...
+      Not yet fully implemented interface...
   "]],
 }
 
