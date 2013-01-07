@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/ogdf/misclayout/Attic/CircularLayout.lua,v 1.1 2013/01/02 20:43:05 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/ogdf/misclayout/Attic/CircularLayout.lua,v 1.2 2013/01/07 14:22:55 tantau Exp $
 
 
 ---
@@ -22,7 +22,7 @@ local declare = require "pgf.gd.interface.InterfaceToAlgorithms".declare
 ---
 declare {
   key = "CircularLayout",
-  algorithm_written_in_c = "pgf.gd.ogdf.c.CLibrary.circular_layout",
+  algorithm_written_in_c = "pgf.gd.ogdf.c.CLibrary.CircularLayout_call",
   preconditions = {
     connected = true
   },
