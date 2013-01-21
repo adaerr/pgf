@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/ReingoldTilford1981.lua,v 1.3 2012/12/17 23:53:12 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/ReingoldTilford1981.lua,v 1.4 2013/01/21 11:21:30 tantau Exp $
 
 
 
@@ -246,9 +246,11 @@ declare {
 ---
 declare {
   key  = "binary tree layout",
-  { key = "tree layout" },
-  { key = "minimum number of children" , value=2 },
-  { key = "significant sep", value = 10 },
+  use = {
+    { key = "tree layout" },
+    { key = "minimum number of children" , value=2 },
+    { key = "significant sep", value = 10 },
+  },
 
   summary = [["
       A layout based on the Reingold--Tilford method for drawing binary trees. 
@@ -300,10 +302,12 @@ declare {
 ---
 declare {
   key = "extended binary tree layout",
-  { key = "tree layout" },
-  { key = "minimum number of children" , value=2 },
-  { key = "missing nodes get space" },
-  { key = "significant sep", value = 0 },
+  use = {
+    { key = "tree layout" },
+    { key = "minimum number of children" , value=2 },
+    { key = "missing nodes get space" },
+    { key = "significant sep", value = 0 },
+  },
 
   summary = [["
      This algorithm is similar to |binary tree layout|, only the option

@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
---- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/ChildSpec.lua,v 1.1 2012/11/27 17:24:26 tantau Exp $
+--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/ChildSpec.lua,v 1.2 2013/01/21 11:21:30 tantau Exp $
 
 
 
@@ -174,7 +174,9 @@ declare {
 
 declare {
   key  = "first",
-  { key = "desired child index", value = 1},
+  use = {
+    { key = "desired child index", value = 1},
+  },
 
   summary = [["  
        A shorthand for setting the desired child number to |1|.      
@@ -185,7 +187,9 @@ declare {
 
 declare {
   key  = "second",
-  { key = "desired child index", value = 2},
+  use = {
+    { key = "desired child index", value = 2},
+  },
 
   summary = [["  
        A shorthand for setting the desired child number to |2|.
@@ -197,7 +201,9 @@ declare {
 
 declare {
   key  = "third",
-  { key = "desired child index", value = 3},
+  use = {
+    { key = "desired child index", value = 3},
+  },
 
   summary = [["  
        A shorthand for setting the desired child number to |3|.
@@ -209,7 +215,9 @@ declare {
 
 declare {
   key  = "fourth",
-  { key = "desired child index", value = 4},
+  use = {
+    { key = "desired child index", value = 4}
+  },
 
   summary = [["  
        A shorthand for setting the desired child number to |4|.
