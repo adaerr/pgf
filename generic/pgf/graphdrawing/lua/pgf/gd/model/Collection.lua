@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Collection.lua,v 1.1 2012/11/27 17:24:26 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Collection.lua,v 1.2 2013/02/08 17:14:05 tantau Exp $
 
 
 ---
@@ -96,7 +96,6 @@ function Collection.new(t)
       kind                   = t.kind,
       event                  = t.event,
       child_collections      = t.child_collections or {},
-      storage                = Storage.new(),
     }, Collection)
 end
 
