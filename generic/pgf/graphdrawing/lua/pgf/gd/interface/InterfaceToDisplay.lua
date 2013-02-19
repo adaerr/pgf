@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua,v 1.6 2013/02/08 17:14:05 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua,v 1.7 2013/02/19 23:21:45 tantau Exp $
 
 
 
@@ -172,7 +172,7 @@ function InterfaceToDisplay.runGraphDrawingAlgorithm()
       -- Nothing needs to be done
       return
     end
-  
+    
     LayoutPipeline.run(scope)
   end
 	 

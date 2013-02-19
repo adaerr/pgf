@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/LayoutPipeline.lua,v 1.5 2013/02/08 17:14:05 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/LayoutPipeline.lua,v 1.6 2013/02/19 23:21:45 tantau Exp $
 
 
 ---
@@ -186,7 +186,7 @@ function LayoutPipeline.runOnLayout(scope, algorithm_class, layout_graph, layout
       layout = layout,
       layout_graph = layout_graph
     }
-      
+
     -- Step 2.7: Compute a spanning tree, if necessary
     if algorithm_class.preconditions.tree then
       assert(algorithm_class.preconditions.connected)
