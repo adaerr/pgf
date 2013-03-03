@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/library.lua,v 1.5 2013/02/08 17:35:30 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/library.lua,v 1.6 2013/03/03 22:13:12 tantau Exp $
 
 
 -- Load declarations from:
@@ -189,6 +189,14 @@ declare {
   summary = [["  
        The radius of a circular object used in graph drawing.
   "]]
+}
+    
+---
+    
+declare {
+  key = "no layout",
+  algorithm = { run = function () end },
+  summary = "This layout does nothing.",
 }
 
 
