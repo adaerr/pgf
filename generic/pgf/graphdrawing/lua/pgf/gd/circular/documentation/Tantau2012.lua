@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/circular/Attic/Tantau2012_documentation.lua,v 1.1 2013/03/04 16:09:46 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/circular/documentation/Attic/Tantau2012.lua,v 1.1 2013/03/04 22:46:04 tantau Exp $
 
 
 return [[
