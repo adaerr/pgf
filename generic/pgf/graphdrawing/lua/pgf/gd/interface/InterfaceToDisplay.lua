@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua,v 1.7 2013/02/19 23:21:45 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua,v 1.8 2013/03/07 18:17:14 tantau Exp $
 
 
 
@@ -865,8 +865,8 @@ local option_metatable = {
     function (t, key)
       local k = aliases[key]
       if k then
-	local v = t[k]
-	if v then
+	local v = (type(k) == "string" and t[k]) or (type(k) == "function" and k(t)) or nil
+	if v ~= nil then
 	  return v
 	end
       end

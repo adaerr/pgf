@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/interface/InterfaceCore.lua,v 1.4 2013/02/08 17:14:05 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/interface/InterfaceCore.lua,v 1.5 2013/03/07 18:17:14 tantau Exp $
 
 
 
@@ -63,7 +63,9 @@ local InterfaceCore = {
   option_initial      = {
     algorithm_phases = {}
   },
-  option_aliases      = {},
+  option_aliases      = {
+    [{}] = true -- dummy entry to make sure table is not empty
+  },
 
   -- Constant strings for special collection kinds.
   sublayout_kind      = "INTERNAL_sublayout_kind",
