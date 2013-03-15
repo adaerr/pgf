@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/interface/InterfaceToC.lua,v 1.4 2013/03/03 22:13:12 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/interface/InterfaceToC.lua,v 1.5 2013/03/15 15:04:43 tantau Exp $
 
 
 ---
@@ -63,7 +63,9 @@ function InterfaceToC.declare_algorithm_written_in_c (t)
 	    for i=1,#edges do
 	      edges[edges[i]] = i
 	    end
+	    collectgarbage("stop") -- BUG! Remove this when everything is linked against a SINGLE Lua lib at runtime
 	    t.algorithm_written_in_c (self.digraph, back_table, edges, self)
+	    collectgarbage("restart") -- Remove also!
 	  end
   }  
 end

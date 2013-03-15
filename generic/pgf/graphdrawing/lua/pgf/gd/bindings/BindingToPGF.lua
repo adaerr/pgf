@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/bindings/BindingToPGF.lua,v 1.6 2013/02/08 17:14:05 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/bindings/BindingToPGF.lua,v 1.7 2013/03/15 15:04:41 tantau Exp $
 
 
 
@@ -82,8 +82,7 @@ end
 -- Declarations
 
 function BindingToPGF:declareCallback(t)
-  tex.print("\\pgfgdcallbackdeclareparameter{" .. t.key .. "}{"
-	    .. (t.type or "nil") .. "}{" .. tostring(t.default or "") .. "}")
+  tex.print("\\pgfgdcallbackdeclareparameter{" .. t.key .. "}{" .. (t.type or "nil") .. "}")
 end
 
 

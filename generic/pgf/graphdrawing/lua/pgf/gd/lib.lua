@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
---- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/lib.lua,v 1.3 2013/02/19 23:21:45 tantau Exp $
+--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/lib.lua,v 1.4 2013/03/15 15:04:41 tantau Exp $
 
 
 
@@ -185,7 +185,7 @@ end
 --
 function lib.imap(source, fun, new)
   if not new then
-    new = {}
+    new = { }
   end
   for i, v in ipairs(source) do
     new[#new+1] = fun(v, i)
