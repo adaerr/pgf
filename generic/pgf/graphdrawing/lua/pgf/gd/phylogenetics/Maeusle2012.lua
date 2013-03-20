@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/phylogenetics/Maeusle2012.lua,v 1.2 2013/02/08 17:14:06 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/phylogenetics/Maeusle2012.lua,v 1.3 2013/03/20 17:16:38 tantau Exp $
 
 
 -- Imports
@@ -43,7 +43,7 @@ declare {
 	  end
   },
   phase = "phylogenetic tree layout",
-  default = true,
+  phase_default = true,
 
   summary = [["  
       A rooted rectangular phylogram is...

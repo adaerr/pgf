@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/SpanningTreeComputation.lua,v 1.4 2013/01/21 11:21:30 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/SpanningTreeComputation.lua,v 1.5 2013/03/20 17:16:38 tantau Exp $
 
 
 
@@ -88,7 +88,7 @@ declare {
       end
   },
   phase = "spanning tree computation",
-  default = true,
+  phase_default = true,
 
   summary = [["  
        This key selects ``breadth first'' as the (sub)algorithm for

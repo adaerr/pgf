@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/layered/edge_routing.lua,v 1.1 2012/11/27 17:24:26 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/layered/edge_routing.lua,v 1.2 2013/03/20 17:16:38 tantau Exp $
 
 
 local declare = require("pgf.gd.interface.InterfaceToAlgorithms").declare
@@ -36,7 +36,7 @@ declare {
   key = "polyline layer edge routing",
   algorithm = require "pgf.gd.layered.EdgeRoutingGansnerKNV1993",
   phase = "layer edge routing",
-  default = true,
+  phase_default = true,
 
   summary = [["  
        This edge routing algorithm uses polygonal lines to connect nodes. 

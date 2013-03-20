@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/phylogenetics/BalancedNearestNeighbourInterchange.lua,v 1.1 2013/02/08 17:14:05 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/phylogenetics/BalancedNearestNeighbourInterchange.lua,v 1.2 2013/03/20 17:16:38 tantau Exp $
 
 
 
@@ -31,7 +31,7 @@ declare {
   key = "balanced nearest neighbour interchange",
   algorithm = BalancedNearestNeighbourInterchange,
   phase = "phylogenetic tree optimization",
-  default = true,
+  phase_default = true,
 
   summary = [["  
       The BNNI (Balanced Nearest Neighbour Interchange) is a

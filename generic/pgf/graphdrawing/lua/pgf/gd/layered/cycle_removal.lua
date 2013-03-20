@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/layered/cycle_removal.lua,v 1.1 2012/11/27 17:24:26 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/layered/cycle_removal.lua,v 1.2 2013/03/20 17:16:38 tantau Exp $
 
 
 local declare = require("pgf.gd.interface.InterfaceToAlgorithms").declare
@@ -32,7 +32,7 @@ declare {
   key = "depth first cycle removal",
   algorithm = require "pgf.gd.layered.CycleRemovalGansnerKNV1993",
   phase = "cycle removal",
-  default = true,
+  phase_default = true,
 
   summary = [["  
        Selects a cycle removal algorithm that is especially

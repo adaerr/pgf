@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/library.lua,v 1.7 2013/03/15 15:04:41 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/library.lua,v 1.8 2013/03/20 17:16:38 tantau Exp $
 
 
 -- Load declarations from:
@@ -60,7 +60,6 @@ declare {
 declare {
   key = "nodes behind edges",
   type = "boolean",
-  default = true,
 
   summary = "Specifies, that nodes should be drawn behind the edges",
   documentation = [["  
