@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/SpanningTreeComputation.lua,v 1.5 2013/03/20 17:16:38 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/SpanningTreeComputation.lua,v 1.6 2013/04/04 20:43:45 tantau Exp $
 
 
 
@@ -70,9 +70,9 @@ local declare  = require("pgf.gd.interface.InterfaceToAlgorithms").declare
 
 
 
------------------------------
--- General tree parameters --
------------------------------
+-- ------------------------- --
+-- General tree parameters   --
+-- ------------------------- --
 
 
 

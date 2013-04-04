@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
---- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/ChildSpec.lua,v 1.2 2013/01/21 11:21:30 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/trees/ChildSpec.lua,v 1.3 2013/04/04 20:43:45 tantau Exp $
 
 
 

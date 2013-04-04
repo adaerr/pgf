@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
---- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf.lua,v 1.2 2012/11/28 21:04:58 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf.lua,v 1.3 2013/04/04 20:43:44 tantau Exp $
 
 
 ---
@@ -40,7 +40,7 @@ function pgf.debug(...)
   texio.write_nl("Debug called for: ")
   -- this is to even print out nil arguments in between
   local args = {...}
-  for i = 1, table.getn(args) do
+  for i = 1, #args do
     if i ~= 1 then texio.write(", ") end
     texio.write(tostring_table(args[i], "", 5))
   end

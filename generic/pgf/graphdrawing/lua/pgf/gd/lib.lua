@@ -7,10 +7,12 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
---- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/lib.lua,v 1.4 2013/03/15 15:04:41 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/lib.lua,v 1.5 2013/04/04 20:43:45 tantau Exp $
 
 
 
+---
+-- Basic library functions
 
 local lib = {}
 

@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/bindings/Binding.lua,v 1.5 2013/02/08 17:14:05 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/bindings/Binding.lua,v 1.6 2013/04/04 20:43:45 tantau Exp $
 
 
 -- Imports
@@ -36,7 +36,7 @@ local Storage = require "pgf.gd.lib.Storage"
 -- layer in such a way that it calls the appropriate functions from
 -- |InterfaceToDisplay|.
 --
--- @fields storage A |Storage| storing the information passed from the
+-- @field storage A |Storage| storing the information passed from the
 -- display layer. The interpretation of this left to the actual
 -- binding. 
 
