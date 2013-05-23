@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/Orientation.lua,v 1.1 2012/11/27 17:24:24 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/Orientation.lua,v 1.2 2013/05/23 20:01:26 tantau Exp $
 
 
 
@@ -29,8 +29,7 @@
 -- are specified in explained momentarily. Second, you can specify a
 -- so-called ``growth direction'' for trees. 
 --
-
-local _
+-- @end
 
 
 -- Namespace

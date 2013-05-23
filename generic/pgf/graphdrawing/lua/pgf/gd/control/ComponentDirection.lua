@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/ComponentDirection.lua,v 1.1 2012/11/27 17:24:24 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/ComponentDirection.lua,v 1.2 2013/05/23 20:01:25 tantau Exp $
 
 
 local declare       = require "pgf.gd.interface.InterfaceToAlgorithms".declare
@@ -15,8 +15,8 @@ local declare       = require "pgf.gd.interface.InterfaceToAlgorithms".declare
 
 ---
 -- @section subsubsection {Arranging Components in a Certain Direction}
-
-local _
+--
+-- @end
 
 ---
 

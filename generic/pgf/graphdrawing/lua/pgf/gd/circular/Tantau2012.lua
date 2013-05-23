@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/circular/Tantau2012.lua,v 1.6 2013/03/05 23:44:29 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/circular/Tantau2012.lua,v 1.7 2013/05/23 20:01:25 tantau Exp $
 
 
 -- Imports
@@ -105,7 +105,7 @@ end
 function Tantau2012:computeNodeRadii()
   local radii = {}
   for i,v in ipairs(self.digraph.vertices) do
-    local min_x, min_y, max_x, max_y = Coordinate.boundingBox(v.hull)
+    local min_x, min_y, max_x, max_y = v:boundingBox()
     local w, h = max_x-min_x, max_y-min_y
     if v.shape == "circle" or v.shape == "ellipse" then
       radii[i] = math.max(w,h)/2

@@ -7,12 +7,13 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/doc/generic/pgf/lua/pgf/Attic/manual.lua,v 1.1 2013/04/04 20:43:29 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/doc/ogdf/planarity.lua,v 1.1 2013/05/23 20:01:26 tantau Exp $
 
 
 
-local manual = {}
+---
+-- @section subsection {Algorithms for Drawing Planar Graphs}
+--
+-- 
 
-require 'pgf'.manual = manual
-
-return manual
+local _

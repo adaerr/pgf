@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/force/ControlElectric.lua,v 1.2 2013/04/04 20:43:45 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/force/ControlElectric.lua,v 1.3 2013/05/23 20:01:27 tantau Exp $
 
 
 -- Imports
@@ -19,8 +19,7 @@ local declare = require("pgf.gd.interface.InterfaceToAlgorithms").declare
 -- @section subsubsection {Forces and Their Effects: Electrical
 -- Repulsion}
 --
-
-local _
+-- @end
 
 
 ---

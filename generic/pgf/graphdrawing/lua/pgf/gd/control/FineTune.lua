@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/FineTune.lua,v 1.2 2013/02/08 17:35:30 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/FineTune.lua,v 1.3 2013/05/23 20:01:25 tantau Exp $
 
 
 local declare       = require "pgf.gd.interface.InterfaceToAlgorithms".declare
@@ -18,8 +18,7 @@ local lib           = require "pgf.gd.lib"
 ---
 -- @section subsection {Fine-Tuning Positions of Nodes}
 --
-
-local _
+-- @end
 
 
 

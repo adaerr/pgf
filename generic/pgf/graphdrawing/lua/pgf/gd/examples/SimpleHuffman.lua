@@ -7,13 +7,13 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/examples/SimpleHuffman.lua,v 1.3 2013/02/08 17:14:05 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/examples/SimpleHuffman.lua,v 1.4 2013/05/23 20:01:27 tantau Exp $
 
 
 ---
 -- @section subsubsection {How To Generate Nodes Inside an Algorithm}
-
-local _
+--
+-- @end
 
 
 

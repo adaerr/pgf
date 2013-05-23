@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/layered/node_ranking.lua,v 1.2 2013/03/20 17:16:38 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/layered/node_ranking.lua,v 1.3 2013/05/23 20:01:27 tantau Exp $
 
 
 local declare = require("pgf.gd.interface.InterfaceToAlgorithms").declare
@@ -27,8 +27,8 @@ local declare = require("pgf.gd.interface.InterfaceToAlgorithms").declare
 --
 -- For more details, please see Section 4.1.2 of Pohlmann's Diploma
 -- thesis. 
-
-local _
+--
+-- @end
 
 
 

@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/force/ControlSprings.lua,v 1.2 2013/04/04 20:43:45 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/force/ControlSprings.lua,v 1.3 2013/05/23 20:01:27 tantau Exp $
 
 
 -- Imports
@@ -35,8 +35,8 @@ local declare = require("pgf.gd.interface.InterfaceToAlgorithms").declare
 -- \tikz \graph [spring electrical layout]                      { subgraph C_n[n=3] };
 -- \tikz \graph [spring electrical layout, node distance=1.5cm] { subgraph C_n[n=3] };
 -- \end{codeexample}
-
-local spring_forces
+--
+-- @end
 
 
 

@@ -8,13 +8,13 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/examples/SimpleEdgeDemo.lua,v 1.1 2012/11/27 17:24:25 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/examples/SimpleEdgeDemo.lua,v 1.2 2013/05/23 20:01:27 tantau Exp $
 
 
 ---
 -- @section subsubsection {How To Generate Edges Inside an Algorithm}
-
-local _
+--
+-- @end
 
 
 -- Imports

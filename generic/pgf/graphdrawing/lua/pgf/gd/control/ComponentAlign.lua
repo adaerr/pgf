@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/ComponentAlign.lua,v 1.3 2013/01/21 11:21:30 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/ComponentAlign.lua,v 1.4 2013/05/23 20:01:25 tantau Exp $
 
 
 local declare       = require "pgf.gd.interface.InterfaceToAlgorithms".declare
@@ -44,8 +44,8 @@ local declare       = require "pgf.gd.interface.InterfaceToAlgorithms".declare
 -- since names like |counterclockwise| are a bit hard to remember and to
 -- apply in practice, a number of easier-to-remember keys are predefined
 -- that combine an alignment and a direction.
-
-local aligning_components
+--
+-- @end
 
   
 ---

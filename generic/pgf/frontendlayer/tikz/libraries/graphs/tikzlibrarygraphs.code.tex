@@ -8,7 +8,7 @@
 %
 % See the file doc/generic/pgf/licenses/LICENSE for more details.
 
-\ProvidesFileRCS[v\pgfversion] $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/frontendlayer/tikz/libraries/graphs/tikzlibrarygraphs.code.tex,v 1.35 2012/12/30 00:20:48 tantau Exp $
+\ProvidesFileRCS[v\pgfversion] $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/frontendlayer/tikz/libraries/graphs/tikzlibrarygraphs.code.tex,v 1.36 2013/05/23 20:01:25 tantau Exp $
 
 
 % 
@@ -201,7 +201,7 @@
     \hbox\bgroup
       \bgroup%
         \pgfinterruptpath%
-          \scope[graphs/.cd,,@operators=,every graph/.try,#1]%
+          \scope[graphs/.cd,@graph drawing setup/.try,@operators=,every graph/.try,#1]%
             \begingroup%
               \pgfkeysgetvalue{/tikz/graphs/@operators}\tikz@lib@graph@outer@operators%
               \let\tikz@lib@graph@options\pgfutil@empty%

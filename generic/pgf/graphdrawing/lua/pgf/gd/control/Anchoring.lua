@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/Anchoring.lua,v 1.5 2013/03/05 23:44:30 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/control/Anchoring.lua,v 1.6 2013/05/23 20:01:25 tantau Exp $
 
 
 
@@ -46,6 +46,10 @@
 --
 -- Once the node has been determined, the graph is shifted so that
 -- this node lies at the poistion specified by |anchor at|.
+--
+-- @end
+
+
 
 local Anchoring = {}
 
