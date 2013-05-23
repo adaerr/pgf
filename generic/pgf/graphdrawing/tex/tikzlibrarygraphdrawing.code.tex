@@ -8,7 +8,7 @@
 %
 % See the file doc/generic/pgf/licenses/LICENSE for more details.
 
-\ProvidesFileRCS[v\pgfversion] $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/tex/tikzlibrarygraphdrawing.code.tex,v 1.18 2013/05/23 20:01:29 tantau Exp $
+\ProvidesFileRCS[v\pgfversion] $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/tex/tikzlibrarygraphdrawing.code.tex,v 1.19 2013/05/23 20:42:51 tantau Exp $
 
 \usepgflibrary{graphdrawing}
 
@@ -46,6 +46,7 @@
     execute at begin scope={
       \tikzset{ 
         --/.style={arrows=-},
+        -!-/.style={draw=none,fill=none},
       }   
       \pgfgdsetedgecallback{\pgfgdtikzedgecallback}%
       % 
