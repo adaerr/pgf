@@ -7,7 +7,7 @@
 %
 % See the file doc/generic/pgf/licenses/LICENSE for more details.
 
-% $Header: /home/nmelzer/projects/TeX/pgf/doc/generic/pgf/macros/pgfmanual-en-macros.tex,v 1.68 2013/05/23 20:01:25 tantau Exp $
+% $Header: /home/nmelzer/projects/TeX/pgf/doc/generic/pgf/macros/pgfmanual-en-macros.tex,v 1.69 2013/06/18 20:49:40 tantau Exp $
 
 
 \providecommand\href[2]{\texttt{#1}}
@@ -1465,7 +1465,7 @@
 \makeatletter
 % \pgfautoxrefs will be defined by 'make dist'
 \pgfutil@ifundefined{pgfautoxrefs}{%
-	\def\pgfmanualpdflabel#1#2{#2}% NO-OP
+	\renewcommand\pgfmanualpdflabel[3][]{#3}% NO-OP
 	\def\pgfmanualpdfref#1#2{#2}%
 	\pgfkeys{
 		/pdflinks/codeexample links=false,% DISABLED.
