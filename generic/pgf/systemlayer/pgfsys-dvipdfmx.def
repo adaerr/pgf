@@ -7,7 +7,7 @@
 %
 % See the file doc/generic/pgf/licenses/LICENSE for more details.
 
-\ProvidesFileRCS $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/systemlayer/pgfsys-dvipdfmx.def,v 1.4 2012/11/30 22:07:30 ludewich Exp $
+\ProvidesFileRCS $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/systemlayer/pgfsys-dvipdfmx.def,v 1.5 2013/06/20 12:46:05 tantau Exp $
 
 % Driver commands for dvipdfmx
 %
@@ -434,6 +434,10 @@
     \pgf@sys@pdf@dvi@tracker
   \fi
 \fi
+
+\def\pgfsys@papersize#1#2{%
+  \expandafter\gdef\expandafter\pgfsys@atbegindocument%
+  \expandafter{\pgfsys@atbegindocument\special{papersize=#1,#2}}}
 
 \endinput
 
