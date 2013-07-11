@@ -7,7 +7,7 @@
 %
 % See the file doc/generic/pgf/licenses/LICENSE for more details.
 
-\ProvidesFileRCS $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/basiclayer/pgfcorearrows.code.tex,v 1.13 2013/01/02 20:14:35 ludewich Exp $
+\ProvidesFileRCS $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/basiclayer/pgfcorearrows.code.tex,v 1.14 2013/07/11 09:07:00 tantau Exp $
 
 
 % Sets the end arrow
@@ -339,7 +339,8 @@
         \pgf@arrows@repeat{pgf@arrow@right@#7}{pgf@arrow@right@#3}%
         \expandafter\def\csname pgf@arrow@left@#3\endcsname{%
           \pgf@process{%
-            \pgfmathsetlength\pgf@y{#1}%
+            \edef\pgf@marshal{\noexpand\pgfmathsetlength\pgf@y{#1}}%
+            \pgf@marshal%
             \advance\pgf@x by\pgf@y%
             \pgf@process{\csname pgf@arrow@left@#7\endcsname}%
             \pgf@process{\csname pgf@arrow@right@#5\endcsname}%
@@ -375,7 +376,8 @@
         \pgf@arrows@repeat{pgf@arrow@left@#7}{pgf@arrow@left@#3}%
         \expandafter\def\csname pgf@arrow@right@#3\endcsname{%
           \pgf@process{%
-            \pgfmathsetlength\pgf@y{#1}%
+            \edef\pgf@marshal{\noexpand\pgfmathsetlength\pgf@y{#1}}%
+            \pgf@marshal%
             \advance\pgf@x by\pgf@y%
             \pgf@process{\csname pgf@arrow@left@#7\endcsname}%
             \pgf@process{\csname pgf@arrow@right@#5\endcsname}%
