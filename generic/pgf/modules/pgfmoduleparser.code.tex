@@ -7,7 +7,7 @@
 %
 % See the file doc/generic/pgf/licenses/LICENSE for more details.
 
-\ProvidesFileRCS[v\pgfversion] $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/modules/pgfmoduleparser.code.tex,v 1.1 2009/01/12 12:56:09 tantau Exp $
+\ProvidesFileRCS[v\pgfversion] $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/modules/pgfmoduleparser.code.tex,v 1.2 2013/07/15 12:05:34 tantau Exp $
 
 %
 % This file defines commands for defining a letter-by-letter parser
@@ -43,9 +43,9 @@
     \expandafter\let\expandafter\pgf@parser@action%
     \csname pgf@parser@a@\pgf@parser @all@\meaning\pgf@parser@symbol\endcsname%
     \ifx\pgf@parser@action\relax%
-      \PackageError{pgfparse}{Unexpected character
+      \pgferror{Unexpected character
         '\meaning\pgf@parser@symbol' in parser '\pgf@parser' in state
-        '\pgf@parser@state'}{}%
+        '\pgf@parser@state'}%
     \fi%
   \fi%
   \pgf@parser@action%
