@@ -7,7 +7,7 @@
 %
 % See the file doc/generic/pgf/licenses/LICENSE for more details.
 
-\ProvidesFileRCS $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/systemlayer/pgfsys-pdftex.def,v 1.31 2013/07/15 12:05:34 tantau Exp $
+\ProvidesFileRCS $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/systemlayer/pgfsys-pdftex.def,v 1.32 2013/07/16 16:03:13 tantau Exp $
 
 
 % Driver commands for pdf
@@ -217,9 +217,9 @@
 }
 
 
-\def\pgfsys@papersize#1#2{%
-  \pdfpageheight#2%
-  \pdfpagewidth#1}
+\def\pgfsys@papersize#1#2{\pdfpageheight#2\relax\pdfpagewidth#1\relax}
+
+\def\pgfsys@global@papersize#1#2{\global\pdfpageheight#2\relax\global\pdfpagewidth#1\relax}
 
 \ifx\paperheight\@undefined
   \def\pgfsys@thepageheight{\pdfpageheight}
