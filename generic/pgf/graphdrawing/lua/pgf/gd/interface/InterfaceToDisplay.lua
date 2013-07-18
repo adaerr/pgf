@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua,v 1.10 2013/05/23 20:01:27 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/interface/InterfaceToDisplay.lua,v 1.11 2013/07/18 12:26:12 tantau Exp $
 
 
 
@@ -262,7 +262,7 @@ end
 
 
 function InterfaceToDisplay.createVertex(name, shape, path, height, binding_infos, anchors)
-  
+
   -- Setup
   local scope = InterfaceCore.topScope()
   local binding = InterfaceCore.binding
