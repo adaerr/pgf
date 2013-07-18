@@ -7,7 +7,7 @@
 %
 % See the file doc/generic/pgf/licenses/LICENSE for more details.
 
-\ProvidesFileRCS $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/systemlayer/pgfsys-pdftex.def,v 1.32 2013/07/16 16:03:13 tantau Exp $
+\ProvidesFileRCS $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/systemlayer/pgfsys-pdftex.def,v 1.33 2013/07/18 10:34:44 tantau Exp $
 
 
 % Driver commands for pdf
@@ -314,7 +314,9 @@
 \def\pgfsys@transparencygroupfrombox#1{%
   \pgf@sys@pdf@check@resources%
   \pdfxform
-  attr { /Group << /S /Transparency >> } %<<
+  attr { /Group << /S /Transparency
+    /I \ifpgfsys@transparency@group@isolated true \else false \fi
+    /K \ifpgfsys@transparency@group@knockout true \else false \fi >> } %<<
   resources { \pgf@sys@pdf@possible@resources }
   #1%
   \setbox#1=\hbox{\pdfrefxform\pdflastxform}%
