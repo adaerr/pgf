@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/lua/pgf/manual/DocumentParser.lua,v 1.1 2013/05/23 20:01:29 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/lua/pgf/manual/DocumentParser.lua,v 1.2 2013/08/01 16:02:22 tantau Exp $
 
 
 
@@ -262,7 +262,7 @@ DocumentParser.addRenderer (
 	  tex.print("\\par\\emph{Alphabetical method summary:}\\par{\\small")
 	  table.sort(output[name], function (a,b) return a.text < b.text end)
 	  for _,l in ipairs(output[name]) do
-	    tex.print("\\texttt{\\hyperlink{" .. l.link .. "}{" .. l.text:gsub("_", "\\_") .. "}}\\\\")
+	    tex.print("\\texttt{\\hyperlink{" .. l.link .. "}{" .. l.text:gsub("_", "\\_") .. "}}\\par")
 	  end
 	  tex.print("}")
 	end
