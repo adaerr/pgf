@@ -7,7 +7,7 @@
 %
 % See the file doc/generic/pgf/licenses/LICENSE for more details.
 
-\ProvidesFileRCS $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/basiclayer/pgfcoretransformations.code.tex,v 1.13 2013/06/21 12:25:39 tantau Exp $
+\ProvidesFileRCS $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/basiclayer/pgfcoretransformations.code.tex,v 1.14 2013/08/29 12:03:07 tantau Exp $
 
 
 % Position transformations
@@ -385,9 +385,9 @@
 %
 % \pgftansformshift{\pgfpoint{1cm}{1cm}}
 
-\def\pgftransformshift#1{\pgftransformcm{1.0}{0}{0}{1.0}{#1}}
-\def\pgftransformxshift#1{\pgftransformcm{1.0}{0}{0}{1.0}{\pgfpoint{#1}{0pt}}}
-\def\pgftransformyshift#1{\pgftransformcm{1.0}{0}{0}{1.0}{\pgfpoint{0pt}{#1}}}
+\def\pgftransformshift#1{\pgftransformcm{1}{0}{0}{1}{#1}}
+\def\pgftransformxshift#1{\pgftransformcm{1}{0}{0}{1}{\pgfpoint{#1}{+0pt}}}
+\def\pgftransformyshift#1{\pgftransformcm{1}{0}{0}{1}{\pgfpoint{+0pt}{#1}}}
 
 
 
