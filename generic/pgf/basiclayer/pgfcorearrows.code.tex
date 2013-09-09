@@ -7,7 +7,7 @@
 %
 % See the file doc/generic/pgf/licenses/LICENSE for more details.
 
-\ProvidesFileRCS $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/basiclayer/pgfcorearrows.code.tex,v 1.15 2013/07/15 12:05:31 tantau Exp $
+\ProvidesFileRCS $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/basiclayer/pgfcorearrows.code.tex,v 1.16 2013/09/09 10:05:41 tantau Exp $
 
 
 % Sets the end arrow
@@ -441,6 +441,7 @@
   \pgfpathlineto{\pgfqpoint{-3\pgfutil@tempdima}{4\pgfutil@tempdima}}
   \pgfpathlineto{\pgfpointorigin}
   \pgfpathlineto{\pgfqpoint{-3\pgfutil@tempdima}{-4\pgfutil@tempdima}}
+  \pgfpathclose
   \pgfusepathqfill
 }
 
@@ -545,6 +546,7 @@
   {\pgfqpoint{2\pgfutil@tempdima}{-2\pgfutil@tempdima}}
   {\pgfqpoint{6.3333\pgfutil@tempdima}{-.5\pgfutil@tempdima}}
   {\pgfqpoint{9\pgfutil@tempdima}{0pt}}
+  \pgfpathclose
   \pgfusepathqfill
 }
 \pgfarrowsdeclarereversed{latex reversed}{latex reversed}{latex}{latex}
