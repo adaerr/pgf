@@ -7,7 +7,7 @@
 %
 % See the file doc/generic/pgf/licenses/LICENSE for more details.
 
-\ProvidesFileRCS $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/basiclayer/pgfcorearrows.code.tex,v 1.19 2013/09/17 20:22:03 tantau Exp $
+\ProvidesFileRCS $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/basiclayer/pgfcorearrows.code.tex,v 1.20 2013/09/17 20:24:08 tantau Exp $
 
 
 
@@ -789,7 +789,7 @@
 %
 % \pgfsetarrows{-to}
 
-\def\pgfsetarrows#1{\pgf@arrows#1\pgf@stop}
+\def\pgfsetarrows#1{\pgf@arrows@#1\pgf@stop}
 \def\pgf@arrows{\pgfutil@ifnextchar[\pgf@arrows@test@opt\pgf@arrows@}%}
 \def\pgf@arrows@#1-#2\pgf@stop{%
   \pgfsetarrowsstart{#1}%
