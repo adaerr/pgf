@@ -7,12 +7,12 @@
 %
 % See the file doc/generic/pgf/licenses/LICENSE for more details.
 
-\ProvidesFileRCS[v\pgfversion] $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/libraries/pgflibraryarrows.code.tex,v 1.11 2013/09/09 10:05:41 tantau Exp $
+\ProvidesFileRCS[v\pgfversion] $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/libraries/pgflibraryarrows.code.tex,v 1.12 2013/09/17 17:34:00 tantau Exp $
 
 
 % A square bracket shaped arrow
 
-\pgfarrowsdeclare{[}{]}
+\pgfarrowsdeclare{square bracket}{square bracket}
 {
   \pgfutil@tempdima=1pt%
   \advance\pgfutil@tempdima by1.25\pgflinewidth%
@@ -34,7 +34,16 @@
   \pgfusepathqstroke
 }
 
-\pgfarrowsdeclarereversed{]}{[}{[}{]}
+\pgfdeclarearrow{
+  name = [-],
+  means = square bracket
+} 
+
+\pgfdeclarearrow{
+  name = ]-[,
+  means = square bracket[reversed]
+} 
+%\pgfarrowsdeclarereversed{]}{[}{[}{]}
 
 
 % A round bracket shaped arrow
