@@ -7,16 +7,18 @@
 %
 % See the file doc/generic/pgf/licenses/LICENSE for more details.
 
-\ProvidesFileRCS[v\pgfversion] $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarysvg.path.code.tex,v 1.1 2009/01/24 17:07:14 tantau Exp $
+\ProvidesFileRCS[v\pgfversion] $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarysvg.path.code.tex,v 1.2 2013/09/23 18:04:35 tantau Exp $
 
 \usepgflibrary{svg.path}
 
 \def\tikz@svg@path vg{\pgfutil@ifnextchar[\tikz@svg@@path{\tikz@svg@@path[]}}%}
 
-\def\tikz@svg@@path[#1]#2"#3"{%
+\def\tikz@svg@@path[#1]{\pgfutil@ifnextchar"{\tikz@svg@@path@old{#1}}{\tikz@svg@@path@new{#1}}}
+\def\tikz@svg@@path@new#1#2{\tikz@svg@@path@old{#1}"#2"}
+\def\tikz@svg@@path@old#1"#2"{
   {%
     \tikzset{#1}%
-    \pgfpathsvg{#3}%
+    \pgfpathsvg{#2}%
   }%
   {
     \pgftransforminvert
