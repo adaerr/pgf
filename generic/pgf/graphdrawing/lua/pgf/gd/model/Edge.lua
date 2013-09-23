@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Edge.lua,v 1.4 2013/06/10 09:40:59 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Edge.lua,v 1.5 2013/09/23 20:04:26 tantau Exp $
 
 
 --- 
@@ -54,9 +54,7 @@
 -- @field direction One of the directions named above.
 --
 -- @field path A |Path| object that describes the path of the
--- edge. The path's coordinates are interpreted relative to the
--- position of the |tail| vertex and the path starts at this
--- vertex. 
+-- edge. The path's coordinates are interpreted \emph{absolutely}.
 --
 -- @field generated_options This is an options array that is generated
 -- by the algorithm. When the edge is rendered later on, this array

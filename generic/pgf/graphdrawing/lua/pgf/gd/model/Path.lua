@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Path.lua,v 1.1 2013/05/23 20:01:27 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Path.lua,v 1.2 2013/09/23 20:04:26 tantau Exp $
 
 
 --- 
@@ -41,7 +41,7 @@
 -- Instead of a |Coordinate|, a |Path| may also contain a function. In
 -- this case, the function, when called, must return the |Coordinate|
 -- that is ``meant'' by the position. This allows algorithms to
--- add coordinates on a path that are still not fixed at the moment
+-- add coordinates to a path that are still not fixed at the moment
 -- they are added to the path.
 
 local Path = {}
