@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/ogdf/library.lua,v 1.11 2013/10/07 18:43:26 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/ogdf/library.lua,v 1.12 2013/10/09 19:47:00 tantau Exp $
 
 
 ---
@@ -18,8 +18,9 @@
 --
 -- Since C++ code is compiled and not interpreted (like Lua), in order
 -- to use the present library, you need a compiled version of the
--- \textsc{ogdf} library installed for your particular
--- architecture. 
+-- \pgfname\ interface code for the \textsc{ogdf} library
+-- (|pgf/gd/ogdf/c/ogdf_script.so|) installed correctly for your particular
+-- architecture. This is by no means trivial\dots
 --
 -- @library
 

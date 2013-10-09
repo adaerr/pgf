@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/doc/ogdf/layered/SugiyamaLayout.lua,v 1.3 2013/03/07 22:28:37 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/doc/ogdf/layered/SugiyamaLayout.lua,v 1.4 2013/10/09 19:47:00 tantau Exp $
 
 
 local key           = require 'pgf.gd.doc'.key
@@ -52,7 +52,7 @@ example
 \tikz [nodes={text height=.7em, text depth=.2em,
               draw=black!20, thick, fill=white, font=\footnotesize},
        >=spaced stealth', rounded corners, semithick]
-  \graph [SugiyamaLayout, FastSimpleHierarchyLayout, grow=-30,
+  \graph [SugiyamaLayout, FastSimpleHierarchyLayout, grow=-80,
        level distance=1.5cm, sibling distance=7mm] {
     "5th Edition" -> { "6th Edition", "PWB 1.0" };
     "6th Edition" -> { "LSX",  "1 BSD", "Mini Unix", "Wollongong", "Interdata" };
