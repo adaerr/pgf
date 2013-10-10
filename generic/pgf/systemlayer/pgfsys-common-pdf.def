@@ -7,7 +7,7 @@
 %
 % See the file doc/generic/pgf/licenses/LICENSE for more details.
 
-\ProvidesFileRCS $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/systemlayer/pgfsys-common-pdf.def,v 1.12 2013/09/30 18:30:15 tantau Exp $
+\ProvidesFileRCS $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/systemlayer/pgfsys-common-pdf.def,v 1.13 2013/10/10 12:00:15 tantau Exp $
 
 
 % Common driver commands for all drivers that produce pdf
@@ -83,7 +83,8 @@
       \pgferror{Unknown blend mode '#1'}%
       \def\pgf@temp{Normal}%
     \fi%
-    \pgfutil@addpdfresource@extgs{/pgf@bm\pgf@temp << /BM [ /\pgf@temp ] >>}%<<
+    \edef\pgf@temp{/pgf@bm\pgf@temp << /BM [ /\pgf@temp ] >>}%<<
+    \expandafter\pgfutil@addpdfresource@extgs\expandafter{\pgf@temp}%
   \fi%
   \pgfsysprotocol@literal{\csname pgf@sys@pdf@bm@#1\endcsname\space gs}%  
 }
