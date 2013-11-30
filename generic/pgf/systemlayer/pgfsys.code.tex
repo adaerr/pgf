@@ -7,7 +7,7 @@
 %
 % See the file doc/generic/pgf/licenses/LICENSE for more details.
 
-\ProvidesPackageRCS[v\pgfversion] $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/systemlayer/pgfsys.code.tex,v 1.46 2013/08/23 09:50:22 tantau Exp $
+\ProvidesPackageRCS[v\pgfversion] $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/systemlayer/pgfsys.code.tex,v 1.47 2013/11/30 11:35:10 ludewich Exp $
 
 
 % Load key mechanism
@@ -70,6 +70,9 @@
 \newcount\c@pgf@countc
 \newcount\c@pgf@countd
 
+\newtoks\t@pgf@toka
+\newtoks\t@pgf@tokb
+\newtoks\t@pgf@tokc
 
 % Ensure that math registers are the same (math is broken in case it
 % is loaded first)
