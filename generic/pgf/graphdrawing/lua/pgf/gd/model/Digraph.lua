@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Digraph.lua,v 1.5 2013/09/23 20:04:26 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Digraph.lua,v 1.6 2013/12/04 09:51:46 tantau Exp $
 
 
 
@@ -208,7 +208,7 @@ require("pgf.gd.model").Digraph = Digraph
 -- Imports
 local Arc         = require "pgf.gd.model.Arc"
 local LookupTable = require "pgf.gd.lib.LookupTable"
-
+local Vertex      = require "pgf.gd.model.Vertex"
 
 
 
