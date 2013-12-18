@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Vertex.lua,v 1.4 2013/09/23 20:04:27 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Vertex.lua,v 1.5 2013/12/18 15:01:45 tantau Exp $
 
 
 --- 
@@ -254,7 +254,6 @@ function Vertex:anchor(anchor)
     local intersections = p:intersectionsWith(self.path)
     if #intersections > 0 then
       c = intersections[1].point
-      c:unshiftByCoordinate(self.anchors.center)
     end
   end
   self.anchors[anchor] = c
