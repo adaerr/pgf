@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/bindings/BindingToPGF.lua,v 1.9 2013/07/18 12:26:12 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/bindings/BindingToPGF.lua,v 1.10 2013/12/20 14:44:46 tantau Exp $
 
 
 
@@ -21,7 +21,7 @@ local Storage = require "pgf.gd.lib.Storage"
 -- is, implementing) the methods of the |Binding| class. As a typical
 -- example, consider the implementation of the function |renderVertex|:
 --
---\begin{codeexample}[code only]
+--\begin{codeexample}[code only, tikz syntax=false]
 --function BindingToPGF:renderVertex(v)
 --  local info = assert(self.infos[v], "thou shalt not modify the syntactic digraph")
 --  tex.print(

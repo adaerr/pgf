@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Vertex.lua,v 1.5 2013/12/18 15:01:45 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/model/Vertex.lua,v 1.6 2013/12/20 14:44:47 tantau Exp $
 
 
 --- 
@@ -125,7 +125,7 @@ local Storage      = require "pgf.gd.lib.Storage"
 -- some initial values.
 --
 -- @usage 
---\begin{codeexample}[code only]
+--\begin{codeexample}[code only, tikz syntax=false]
 --local v = Vertex.new { name = "hello", pos = Coordinate.new(1,1) }
 --\end{codeexample} 
 --
