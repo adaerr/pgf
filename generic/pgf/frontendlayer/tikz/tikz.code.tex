@@ -7,7 +7,7 @@
 %
 % See the file doc/generic/pgf/licenses/LICENSE for more details.
 
-\ProvidesPackageRCS[v\pgfversion] $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/frontendlayer/tikz/tikz.code.tex,v 1.143 2013/12/31 16:55:23 vibrovski Exp $
+\ProvidesPackageRCS[v\pgfversion] $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/frontendlayer/tikz/tikz.code.tex,v 1.144 2014/01/04 16:47:32 ludewich Exp $
 
 
 \def\tikzerror#1{\pgfutil@packageerror{tikz}{#1}{}}
@@ -999,7 +999,12 @@
 
 % Inter-picture options
 \tikzoption{remember picture}[true]{\csname pgfrememberpicturepositiononpage#1\endcsname}
-\tikzoption{overlay}[]{\pgf@relevantforpicturesizefalse}
+\tikzset{
+	overlay/.is choice,
+	overlay/true/.code={\pgf@relevantforpicturesizefalse},
+	overlay/false/.code={\pgf@relevantforpicturesizetrue},
+	overlay/.default=true
+}
 
 
 
