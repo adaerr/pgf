@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/lua/pgf/manual/DocumentParser.lua,v 1.2 2013/08/01 16:02:22 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/lua/pgf/manual/DocumentParser.lua,v 1.3 2014/02/24 10:40:33 tantau Exp $
 
 
 
@@ -490,6 +490,8 @@ function print_docline_on_output(output, l, mode)
     
     mode = "text"
   elseif l:match("^%s*@library") then
+    -- do nothing
+  elseif l:match("^%s*@function") then
     -- do nothing
   elseif l:match("^%s*@end") then
     close_mode(output, mode)
