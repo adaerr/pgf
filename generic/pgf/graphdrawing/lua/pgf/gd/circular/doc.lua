@@ -7,7 +7,7 @@
 --
 -- See the file doc/generic/pgf/licenses/LICENSE for more information
 
--- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/doc/circular/Attic/Tantau2012.lua,v 1.1 2013/03/05 23:44:30 tantau Exp $
+-- @release $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/graphdrawing/lua/pgf/gd/circular/doc.lua,v 1.1 2014/03/19 09:20:57 tantau Exp $
 
 local key           = require 'pgf.gd.doc'.key
 local documentation = require 'pgf.gd.doc'.documentation
