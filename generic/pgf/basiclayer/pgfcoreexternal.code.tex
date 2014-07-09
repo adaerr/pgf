@@ -7,7 +7,7 @@
 %
 % See the file doc/generic/pgf/licenses/LICENSE for more details.
 
-\ProvidesFileRCS $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/basiclayer/pgfcoreexternal.code.tex,v 1.20 2013/07/15 12:05:31 tantau Exp $
+\ProvidesFileRCS $Header: /home/nmelzer/projects/TeX/pgf/generic/pgf/basiclayer/pgfcoreexternal.code.tex,v 1.21 2014/07/09 14:01:22 cfeuersaenger Exp $
 
 
 
@@ -492,7 +492,7 @@
         \immediate\closeout\pgf@plotwrite
       \fi
     \fi
-    \pgfsys@papersize{\the\wd\pgfpic}{\the\dimen0}%
+    \pgfsys@prepare@papersize{\the\wd\pgfpic}{\the\dimen0}%
     %
     \setbox0=\vbox{%
       % I admit that I don't know why there is this kerning:
