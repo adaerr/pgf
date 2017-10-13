@@ -606,7 +606,7 @@
 % Ticks at
 \tikzdatavisualizationset{
   at/.code={\def\tikz@dv@at@list{#1}},
-  also at/.code={\expandafter\def\expandafter\tikz@dv@at@list\expandafter{\tikz@dv@at@list,{#1}}},
+  also at/.code={\expandafter\def\expandafter\tikz@dv@at@list\expandafter{\tikz@dv@at@list,#1}},
   major at/.style={major={at={#1}}},
   minor at/.style={minor={at={#1}}},
   subminor at/.style={subminor={at={#1}}},
